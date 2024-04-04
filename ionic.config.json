@@ -1,0 +1,7 @@
+{
+  "name": "AS3_Assignment_2",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
