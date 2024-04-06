@@ -1,13 +1,142 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>asian</ion-title>
+  <ion-toolbar color="light">
+    <ion-title> What do you want to cook today? </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
+<ion-content [fullscreen]="true" style="background-color: #f8f8f8">
+  <!-- Add background color -->
   <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">asian</ion-title>
+    <ion-toolbar color="light">
+      <ion-title size="large">Recipes</ion-title>
     </ion-toolbar>
   </ion-header>
+
+  <!-- Centered div to hold the ion-accordion-group and ion-searchbar -->
+  <div
+    style="
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 100vh;
+      margin-top: 10px; /* Adjust this value to bring it closer */
+      position: relative; /* Add relative positioning */
+      z-index: 2; /* Increase z-index */
+    "
+  >
+    <!-- Insert the ion-searchbar within the same div -->
+    <ion-searchbar
+      placeholder="Search Recipes"
+      style="width: 90%; margin-bottom: 20px"
+      color="light"
+    ></ion-searchbar>
+
+    <ion-accordion-group style="width: 90%; z-index: 1">
+      <!-- First Accordion -->
+      <ion-accordion value="first" style="margin-bottom: 10px">
+        <ion-item slot="header" color="light">
+          <ion-label>Spaghetti</ion-label>
+        </ion-item>
+        <div class="ion-padding" slot="content">
+          <ion-list>
+            <ion-item>225g spaghetti</ion-item>
+            <ion-item>1 tbsp olive oil</ion-item>
+            <ion-item>3 cloves garlic</ion-item>
+            <ion-item>1 can (14 oz) crushed tomatoes</ion-item>
+            <ion-item
+              >Dried oregano, basil, salt, pepper to taste, Parmesan cheese
+              (Optional)</ion-item
+            >
+          </ion-list>
+        </div>
+      </ion-accordion>
+
+      <!-- Second Accordion -->
+      <ion-accordion value="second" style="margin-bottom: 10px">
+        <ion-item slot="header" color="light">
+          <ion-label>Shepherd's Pie</ion-label>
+        </ion-item>
+        <div class="ion-padding" slot="content">
+          <ion-list>
+            <ion-item><b>Filling:</b></ion-item>
+            <ion-item>500g ground lamb or beef</ion-item>
+            <ion-item>Onion, Carrots, Garlic (diced)</ion-item>
+            <ion-item>Frozen peas</ion-item>
+            <ion-item>2 tbsp tomato paste</ion-item>
+            <ion-item>1 cup broth</ion-item>
+            <ion-item>2 tsp Worcestershire sauce, 1 tsp dried thyme</ion-item>
+            <ion-item>Salt and pepper</ion-item>
+
+            <ion-item><b>Mashed Potatoes:</b></ion-item>
+            <ion-item>4 large potatoes</ion-item>
+            <ion-item>1/2 cup milk, 2 tbsp butter</ion-item>
+            <ion-item>Salt and pepper</ion-item>
+          </ion-list>
+        </div>
+      </ion-accordion>
+
+      <!-- Third Accordion -->
+      <ion-accordion value="third" style="margin-bottom: 10px">
+        <ion-item slot="header" color="light">
+          <ion-label>Buttermilk Chicken</ion-label>
+        </ion-item>
+        <div class="ion-padding" slot="content">
+          <ion-list>
+            <ion-item>4 boneless, skinless chicken breasts</ion-item>
+            <ion-item>1 cup buttermilk</ion-item>
+            <ion-item>1 cup all-purpose flour</ion-item>
+            <ion-item>1 teaspoon garlic powder</ion-item>
+            <ion-item>1 teaspoon onion powder</ion-item>
+            <ion-item>1 teaspoon paprika</ion-item>
+            <ion-item>1/2 teaspoon cayenne pepper</ion-item>
+            <ion-item>Salt and pepper to taste</ion-item>
+            <ion-item>Vegetable oil for frying</ion-item>
+          </ion-list>
+        </div>
+      </ion-accordion>
+
+      <!-- Fourth Accordion -->
+      <ion-accordion value="fourth" style="margin-bottom: 10px">
+        <ion-item slot="header" color="light">
+          <ion-label>Fried Chicken</ion-label>
+        </ion-item>
+        <div class="ion-padding" slot="content">
+          <ion-list>
+            <ion-item>4 pieces of chicken (legs, thighs, or breasts)</ion-item>
+            <ion-item>1 cup all-purpose flour</ion-item>
+            <ion-item>1 teaspoon garlic powder</ion-item>
+            <ion-item>1 teaspoon onion powder</ion-item>
+            <ion-item>1/2 teaspoon paprika</ion-item>
+            <ion-item>1/2 teaspoon dried thyme</ion-item>
+            <ion-item>1/2 teaspoon dried oregano</ion-item>
+            <ion-item>Salt and pepper to taste</ion-item>
+            <ion-item>Vegetable oil for frying</ion-item>
+          </ion-list>
+        </div>
+      </ion-accordion>
+
+      <!-- Fifth Accordion -->
+      <ion-accordion value="fifth" style="margin-bottom: 10px">
+        <ion-item slot="header" color="light">
+          <ion-label>Beef Curry</ion-label>
+        </ion-item>
+        <div class="ion-padding" slot="content">
+          <ion-list>
+            <ion-item>500g beef, cut into cubes</ion-item>
+            <ion-item>1 large onion, finely chopped</ion-item>
+            <ion-item>3 cloves garlic, minced</ion-item>
+            <ion-item>1 thumb-sized ginger, grated</ion-item>
+            <ion-item>2 tablespoons curry powder</ion-item>
+            <ion-item>1 teaspoon ground cumin</ion-item>
+            <ion-item>1 teaspoon ground coriander</ion-item>
+            <ion-item>1/2 teaspoon turmeric powder</ion-item>
+            <ion-item>1/2 teaspoon chili powder (adjust to taste)</ion-item>
+            <ion-item>1 can (400ml) coconut milk</ion-item>
+            <ion-item>2 large potatoes, peeled and diced</ion-item>
+            <ion-item>Salt and pepper to taste</ion-item>
+          </ion-list>
+        </div>
+      </ion-accordion>
+    </ion-accordion-group>
+  </div>
 </ion-content>
