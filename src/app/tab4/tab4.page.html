@@ -1,13 +1,75 @@
-<ion-header [translucent]="true">
+<ion-header [translucent]="true" style="background-color: #4caf50">
   <ion-toolbar>
-    <ion-title>tab4</ion-title>
+    <ion-title style="text-align: center; color: #4caf50"
+      >HEALTHY CHOICES RECIPES</ion-title
+    >
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
+<ion-content [fullscreen]="true" style="padding-top: 56px" scroll-y="true">
+  <!-- Adjust the padding as needed -->
   <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">tab4</ion-title>
+    <ion-toolbar style="background-color: #4caf50">
+      <ion-title size="large" style="text-align: center; color: #fff"
+        >Tab 2</ion-title
+      >
     </ion-toolbar>
   </ion-header>
+
+  <div
+    style="
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    "
+  >
+    <ion-searchbar
+      placeholder="Search Recipes"
+      style="width: 90%; margin-top: 10px; margin-bottom: 20px"
+      color="light"
+    ></ion-searchbar>
+
+    <ion-card style="margin-top: 20px; width: 80%; max-width: 600px">
+      <img
+        alt="Grilled Chicken Salad"
+        src="https://nutritiouslife.com/wp-content/uploads/2010/05/shutterstock_274855409-copy-scaled.jpg"
+      />
+      <ion-card-header style="background-color: #4caf50; color: #fff">
+        <ion-card-title>Grilled Chicken Salad</ion-card-title>
+        <ion-card-subtitle>Healthy and Delicious</ion-card-subtitle>
+      </ion-card-header>
+      <ion-card-content>
+        <ion-list>
+          <ion-item>Grilled chicken breast</ion-item>
+          <ion-item>Fresh vegetables</ion-item>
+          <ion-item>Balsamic vinaigrette dressing</ion-item>
+          <ion-item>Salt and pepper to taste</ion-item>
+        </ion-list>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card style="margin-top: 20px; width: 80%; max-width: 600px">
+      <img
+        alt="Sweet Potato and Black Bean Salad"
+        src="https://images.squarespace-cdn.com/content/v1/5e70fc3883651e7229fefd87/1624924347708-0O1ZFYREMF3EUOJJTRHA/poppies-and-prosecco-sweet-potato-black-bean-salad-recipe-5.jpg"
+      />
+      <ion-card-header style="background-color: #4caf50; color: #fff">
+        <ion-card-title>Sweet Potato and Black Bean Salad</ion-card-title>
+        <ion-card-subtitle>Nutrient-Packed Delight</ion-card-subtitle>
+      </ion-card-header>
+      <ion-card-content>
+        <ion-list>
+          <ion-item>Sweet potatoes</ion-item>
+          <ion-item>Black beans</ion-item>
+          <ion-item>Corn</ion-item>
+          <ion-item>Avocado</ion-item>
+          <ion-item>Lime dressing</ion-item>
+          <ion-item>Chopped cilantro</ion-item>
+          <ion-item>Salt and pepper to taste</ion-item>
+        </ion-list>
+      </ion-card-content>
+    </ion-card>
+  </div>
 </ion-content>
