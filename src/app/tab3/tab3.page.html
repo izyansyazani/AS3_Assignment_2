@@ -1,17 +1,110 @@
-<ion-header [translucent]="true">
+<ion-header [translucent]="true" style="background-color: #800000">
   <ion-toolbar>
-    <ion-title>
-      Tab 3
-    </ion-title>
+    <ion-title style="text-align: center; color: #800000"
+      >SEASONAL RECIPES</ion-title
+    >
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
+<ion-content [fullscreen]="true" style="background-color: #f8f8f8">
   <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 3</ion-title>
+    <ion-toolbar style="background-color: #800000">
+      <ion-title size="large" style="text-align: center; color: #fff"
+        >Tab 2</ion-title
+      >
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Tab 3 page"></app-explore-container>
+  <div
+    style="
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding-top: 20px;
+    "
+  >
+    <div
+      style="
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      "
+    >
+      <!-- Heading for Hari Raya -->
+      <ion-title style="font-size: 1.5em; font-weight: bold; color: #800000"
+        >Hari Raya</ion-title
+      >
+
+      <ion-searchbar
+        placeholder="Search Recipes"
+        style="width: 90%; margin-top: 10px; margin-bottom: 20px"
+        color="light"
+      ></ion-searchbar>
+
+      <ion-card
+        style="
+          margin-top: 20px;
+          width: 100%;
+          max-width: 600px;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        "
+      >
+        <img
+          alt="Satay"
+          src="https://media-cdn2.greatbritishchefs.com/media/p5abv3mz/img82070.whqc_1426x713q80.jpg"
+        />
+        <ion-card-header style="background-color: #f39393; color: #fff">
+          <ion-card-title>Satay</ion-card-title>
+          <ion-card-subtitle
+            >Grilled Skewers with Peanut Sauce</ion-card-subtitle
+          >
+        </ion-card-header>
+        <ion-card-content>
+          <ion-list style="padding-left: 16px">
+            <ion-item>Skewers of marinated and grilled meat</ion-item>
+            <ion-item>1 cup peanut sauce</ion-item>
+            <ion-item>1 tablespoon soy sauce</ion-item>
+            <ion-item>1 tablespoon honey</ion-item>
+            <ion-item>1 teaspoon ground coriander</ion-item>
+            <ion-item>1 teaspoon ground cumin</ion-item>
+            <ion-item>1 teaspoon turmeric</ion-item>
+            <ion-item>2 cloves garlic, minced</ion-item>
+            <ion-item>1 tablespoon lime juice</ion-item>
+            <ion-item>Salt and pepper to taste</ion-item>
+          </ion-list>
+        </ion-card-content>
+      </ion-card>
+
+      <ion-card
+        style="
+          width: 100%;
+          max-width: 600px;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        "
+      >
+        <img
+          alt="Beef Rendang"
+          src="https://big.com.my/wp-content/uploads/2019/05/rendang-web-700x410.jpg"
+        />
+        <ion-card-header style="background-color: #f39393; color: #fff">
+          <ion-card-title>Beef Rendang</ion-card-title>
+          <ion-card-subtitle>Slow-cooked Coconut Beef</ion-card-subtitle>
+        </ion-card-header>
+        <ion-card-content>
+          <ion-list style="padding-left: 16px">
+            <ion-item>500g beef, cut into cubes</ion-item>
+            <ion-item>400ml coconut milk</ion-item>
+            <ion-item>4 tablespoons rendang paste</ion-item>
+            <ion-item>2 stalks lemongrass, bruised</ion-item>
+            <ion-item>4 lime leaves</ion-item>
+            <ion-item>2 tablespoons tamarind paste</ion-item>
+            <ion-item>1 tablespoon brown sugar</ion-item>
+            <ion-item>Salt to taste</ion-item>
+          </ion-list>
+        </ion-card-content>
+      </ion-card>
+    </div>
+  </div>
 </ion-content>
