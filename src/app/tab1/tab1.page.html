@@ -1,7 +1,8 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Tab 1
+    <ion-title style="text-align: center">
+      Your Ultimate Guide to Tasty and <br />
+      Healthy Home Cooking
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -9,9 +10,138 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
+      <ion-title size="large" style="text-align: center">
+        Your Ultimate Guide to Tasty and <br />
+        Healthy Home Cooking
+      </ion-title>
     </ion-toolbar>
   </ion-header>
+  <ion-title style="text-align: center; margin-top: 40px">
+    Select Your Filters Below to Discover <br />
+    Personalized Recipes!
+  </ion-title>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+  <!-- Ionic Buttons using ion-grid -->
+  <ion-grid style="margin-top: 20px; margin-bottom: 40px">
+    <ion-row style="align-items: center">
+      <!-- Button 1 -->
+      <ion-col size="4">
+        <ion-button expand="full" class="rounded-button">
+          Breakfast
+        </ion-button>
+      </ion-col>
+
+      <!-- Button 2 -->
+      <ion-col size="4">
+        <ion-button expand="full" class="rounded-button"> Dessert </ion-button>
+      </ion-col>
+
+      <!-- Button 3 -->
+      <ion-col size="4">
+        <ion-button expand="full" class="rounded-button"> Asian </ion-button>
+      </ion-col>
+    </ion-row>
+
+    <ion-row style="align-items: center">
+      <!-- Button 4 -->
+      <ion-col size="4">
+        <ion-button expand="full" class="rounded-button"> Dinner </ion-button>
+      </ion-col>
+
+      <!-- Button 5 -->
+      <ion-col size="4">
+        <ion-button expand="full" class="rounded-button"> Italian </ion-button>
+      </ion-col>
+
+      <!-- Button 6 -->
+      <ion-col size="4">
+        <ion-button expand="full" class="rounded-button">
+          Under 30 mins
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <!-- Images -->
+  <div class="image-container">
+    <!-- Image 1 -->
+    <div class="image-wrapper">
+      <ion-img
+        src="https://live-production.wcms.abc-cdn.net.au/cf368bf1e9b02ea9634c263b20025981?impolicy=wcms_crop_resize&cropH=1125&cropW=1125&xPos=438&yPos=0&width=1125&height=1125"
+        class="responsive-image"
+      ></ion-img>
+    </div>
+
+    <!-- Image 2 -->
+    <div class="image-wrapper">
+      <ion-img
+        src="https://iowagirleats.com/wp-content/uploads/2020/06/Grilled-Chicken-Summer-Salad-iowagirleats-02_srgb.jpg"
+        class="responsive-image"
+      ></ion-img>
+    </div>
+
+    <!-- Image 3 -->
+    <div class="image-wrapper">
+      <ion-img
+        src="https://thefoodcharlatan.com/wp-content/uploads/2023/04/Spaghetti-Sauce-Recipe-6.jpg"
+        class="responsive-image"
+      ></ion-img>
+    </div>
+  </div>
+
+  <!-- Ion Card -->
+  <ion-card
+    style="
+      margin-top: 20px;
+      padding-top: 0;
+      margin-bottom: 20px;
+      padding-bottom: 0;
+    "
+  >
+    <ion-card-header>
+      <ion-card-title class="ion-text-center"> Important ! </ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content class="ion-text-center">
+      All recipes are Halal, but some may contain nuts or dairy. Please check
+      ingredients for allergens.
+    </ion-card-content>
+  </ion-card>
+
+  <style>
+    .image-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); /* 3 columns */
+      gap: 10px; /* Space between images */
+      margin-top: 10px;
+      margin-bottom: 50px; /* Added space under images */
+    }
+
+    .image-wrapper {
+      position: relative;
+      overflow: hidden;
+      padding-bottom: 100%; /* 1:1 aspect ratio */
+    }
+
+    .responsive-image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    @media (max-width: 768px) {
+      .image-wrapper {
+        padding-bottom: 40%; /* Adjusted aspect ratio for smaller screens */
+      }
+    }
+
+    @media (max-width: 480px) {
+      .image-wrapper {
+        padding-bottom: 40%; /* Adjusted aspect ratio for smaller screens */
+      }
+    }
+  </style>
 </ion-content>
