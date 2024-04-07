@@ -1,6 +1,6 @@
 <ion-header [translucent]="true">
   <ion-toolbar color="light">
-    <ion-title> What do you want to cook today? </ion-title>
+    <ion-title style="text-align: center"> Breakfast </ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -19,33 +19,44 @@
       flex-direction: column;
       align-items: center;
       height: 100vh;
-      margin-top: 10px; /* Adjust this value to bring it closer */
-      position: relative; /* Add relative positioning */
-      z-index: 2; /* Increase z-index */
+      margin-top: 40px;
+      position: relative;
+      z-index: 2;
     "
   >
-    <!-- Insert the ion-searchbar within the same div -->
-    <ion-searchbar
-      placeholder="Search Recipes"
-      style="width: 90%; margin-bottom: 20px"
-      color="light"
-    ></ion-searchbar>
-
     <ion-accordion-group style="width: 90%; z-index: 1">
       <!-- First Accordion -->
       <ion-accordion value="first" style="margin-bottom: 10px">
         <ion-item slot="header" color="light">
-          <ion-label>Spaghetti</ion-label>
+          <ion-label>Omelette</ion-label>
         </ion-item>
         <div class="ion-padding" slot="content">
           <ion-list>
-            <ion-item>225g spaghetti</ion-item>
-            <ion-item>1 tbsp olive oil</ion-item>
-            <ion-item>3 cloves garlic</ion-item>
-            <ion-item>1 can (14 oz) crushed tomatoes</ion-item>
             <ion-item
-              >Dried oregano, basil, salt, pepper to taste, Parmesan cheese
-              (Optional)</ion-item
+              ><b>Description: </b> A classic omelette with fresh herbs and
+              cheese.</ion-item
+            >
+            <ion-item><b>Calories:</b> 350 kcal</ion-item>
+            <ion-item>3 large eggs</ion-item>
+            <ion-item>1/4 cup milk</ion-item>
+            <ion-item>2 tbsp butter</ion-item>
+            <ion-item
+              >1/4 cup chopped fresh herbs (parsley, chives, and dill)</ion-item
+            >
+            <ion-item>1/2 cup grated cheese (cheddar or Gruyère)</ion-item>
+            <ion-item>Salt and pepper to taste</ion-item>
+            <ion-item><b>Instructions:</b></ion-item>
+            <ion-item
+              >1. In a bowl, whisk together eggs, milk, salt, and
+              pepper.</ion-item
+            >
+            <ion-item
+              >2. Melt butter in a non-stick skillet over medium heat.</ion-item
+            >
+            <ion-item>3. Pour in the egg mixture and cook until set.</ion-item>
+            <ion-item
+              >4. Sprinkle with fresh herbs and cheese, then fold the omelette
+              in half and serve.</ion-item
             >
           </ion-list>
         </div>
@@ -54,23 +65,34 @@
       <!-- Second Accordion -->
       <ion-accordion value="second" style="margin-bottom: 10px">
         <ion-item slot="header" color="light">
-          <ion-label>Shepherd's Pie</ion-label>
+          <ion-label>Smoothie Bowl</ion-label>
         </ion-item>
         <div class="ion-padding" slot="content">
           <ion-list>
-            <ion-item><b>Filling:</b></ion-item>
-            <ion-item>500g ground lamb or beef</ion-item>
-            <ion-item>Onion, Carrots, Garlic (diced)</ion-item>
-            <ion-item>Frozen peas</ion-item>
-            <ion-item>2 tbsp tomato paste</ion-item>
-            <ion-item>1 cup broth</ion-item>
-            <ion-item>2 tsp Worcestershire sauce, 1 tsp dried thyme</ion-item>
-            <ion-item>Salt and pepper</ion-item>
-
-            <ion-item><b>Mashed Potatoes:</b></ion-item>
-            <ion-item>4 large potatoes</ion-item>
-            <ion-item>1/2 cup milk, 2 tbsp butter</ion-item>
-            <ion-item>Salt and pepper</ion-item>
+            <ion-item
+              ><b>Description: </b> A refreshing smoothie bowl topped with fresh
+              fruits and granola.</ion-item
+            >
+            <ion-item><b>Calories:</b> 300 kcal</ion-item>
+            <ion-item>1 cup frozen mixed berries</ion-item>
+            <ion-item>1 ripe banana</ion-item>
+            <ion-item>1/2 cup Greek yogurt</ion-item>
+            <ion-item>1/4 cup almond milk</ion-item>
+            <ion-item>2 tbsp honey or maple syrup</ion-item>
+            <ion-item
+              >Toppings: sliced kiwi, strawberries, granola, and chia
+              seeds</ion-item
+            >
+            <ion-item><b>Instructions:</b></ion-item>
+            <ion-item
+              >1. In a blender, combine frozen berries, banana, Greek yogurt,
+              almond milk, and honey.</ion-item
+            >
+            <ion-item>2. Blend until smooth and creamy.</ion-item>
+            <ion-item
+              >3. Pour the smoothie into a bowl and top with sliced fruits,
+              granola, and chia seeds.</ion-item
+            >
           </ion-list>
         </div>
       </ion-accordion>
@@ -78,19 +100,28 @@
       <!-- Third Accordion -->
       <ion-accordion value="third" style="margin-bottom: 10px">
         <ion-item slot="header" color="light">
-          <ion-label>Buttermilk Chicken</ion-label>
+          <ion-label>Avocado Toast</ion-label>
         </ion-item>
         <div class="ion-padding" slot="content">
           <ion-list>
-            <ion-item>4 boneless, skinless chicken breasts</ion-item>
-            <ion-item>1 cup buttermilk</ion-item>
-            <ion-item>1 cup all-purpose flour</ion-item>
-            <ion-item>1 teaspoon garlic powder</ion-item>
-            <ion-item>1 teaspoon onion powder</ion-item>
-            <ion-item>1 teaspoon paprika</ion-item>
-            <ion-item>1/2 teaspoon cayenne pepper</ion-item>
+            <ion-item
+              ><b>Description: </b> A trendy avocado toast with cherry tomatoes
+              and feta cheese.</ion-item
+            >
+            <ion-item><b>Calories:</b> 320 kcal</ion-item>
+            <ion-item>2 slices whole-grain bread</ion-item>
+            <ion-item>1 ripe avocado</ion-item>
+            <ion-item>1/2 cup cherry tomatoes, halved</ion-item>
+            <ion-item>1/4 cup crumbled feta cheese</ion-item>
+            <ion-item>1 tbsp olive oil</ion-item>
             <ion-item>Salt and pepper to taste</ion-item>
-            <ion-item>Vegetable oil for frying</ion-item>
+            <ion-item><b>Instructions:</b></ion-item>
+            <ion-item>1. Toast the bread slices until golden brown.</ion-item>
+            <ion-item>2. Mash the avocado and spread it on the toast.</ion-item>
+            <ion-item
+              >3. Top with cherry tomatoes, crumbled feta, olive oil, salt, and
+              pepper.</ion-item
+            >
           </ion-list>
         </div>
       </ion-accordion>
@@ -98,19 +129,47 @@
       <!-- Fourth Accordion -->
       <ion-accordion value="fourth" style="margin-bottom: 10px">
         <ion-item slot="header" color="light">
-          <ion-label>Fried Chicken</ion-label>
+          <ion-label>Pancakes or Waffle</ion-label>
         </ion-item>
         <div class="ion-padding" slot="content">
           <ion-list>
-            <ion-item>4 pieces of chicken (legs, thighs, or breasts)</ion-item>
+            <ion-item
+              ><b>Description: </b> Fluffy pancakes or waffles served with fresh
+              berries and maple syrup.</ion-item
+            >
+            <ion-item><b>Calories:</b> 400 kcal</ion-item>
             <ion-item>1 cup all-purpose flour</ion-item>
-            <ion-item>1 teaspoon garlic powder</ion-item>
-            <ion-item>1 teaspoon onion powder</ion-item>
-            <ion-item>1/2 teaspoon paprika</ion-item>
-            <ion-item>1/2 teaspoon dried thyme</ion-item>
-            <ion-item>1/2 teaspoon dried oregano</ion-item>
-            <ion-item>Salt and pepper to taste</ion-item>
-            <ion-item>Vegetable oil for frying</ion-item>
+            <ion-item>1 tbsp sugar</ion-item>
+            <ion-item>1 tsp baking powder</ion-item>
+            <ion-item>1/2 tsp baking soda</ion-item>
+            <ion-item>1/4 tsp salt</ion-item>
+            <ion-item>1 cup buttermilk</ion-item>
+            <ion-item>1 large egg</ion-item>
+            <ion-item>2 tbsp melted butter</ion-item>
+            <ion-item
+              >Toppings: fresh berries, maple syrup, and whipped cream</ion-item
+            >
+            <ion-item><b>Instructions:</b></ion-item>
+            <ion-item
+              >1. In a bowl, whisk together flour, sugar, baking powder, baking
+              soda, and salt.</ion-item
+            >
+            <ion-item
+              >2. In another bowl, whisk together buttermilk, egg, and melted
+              butter.</ion-item
+            >
+            <ion-item
+              >3. Pour the wet ingredients into the dry ingredients and mix
+              until just combined.</ion-item
+            >
+            <ion-item
+              >4. Heat a non-stick skillet or waffle iron and cook the pancakes
+              or waffles until golden brown.</ion-item
+            >
+            <ion-item
+              >5. Serve with fresh berries, maple syrup, and whipped
+              cream.</ion-item
+            >
           </ion-list>
         </div>
       </ion-accordion>
@@ -118,22 +177,251 @@
       <!-- Fifth Accordion -->
       <ion-accordion value="fifth" style="margin-bottom: 10px">
         <ion-item slot="header" color="light">
-          <ion-label>Beef Curry</ion-label>
+          <ion-label>Breakfast Burrito</ion-label>
         </ion-item>
         <div class="ion-padding" slot="content">
           <ion-list>
-            <ion-item>500g beef, cut into cubes</ion-item>
-            <ion-item>1 large onion, finely chopped</ion-item>
-            <ion-item>3 cloves garlic, minced</ion-item>
-            <ion-item>1 thumb-sized ginger, grated</ion-item>
-            <ion-item>2 tablespoons curry powder</ion-item>
-            <ion-item>1 teaspoon ground cumin</ion-item>
-            <ion-item>1 teaspoon ground coriander</ion-item>
-            <ion-item>1/2 teaspoon turmeric powder</ion-item>
-            <ion-item>1/2 teaspoon chili powder (adjust to taste)</ion-item>
-            <ion-item>1 can (400ml) coconut milk</ion-item>
-            <ion-item>2 large potatoes, peeled and diced</ion-item>
-            <ion-item>Salt and pepper to taste</ion-item>
+            <ion-item
+              ><b>Description: </b> A hearty breakfast burrito with scrambled
+              eggs, sausage, and cheese.</ion-item
+            >
+            <ion-item><b>Calories:</b> 450 kcal</ion-item>
+            <ion-item>4 large eggs, scrambled</ion-item>
+            <ion-item>4 large flour tortillas</ion-item>
+            <ion-item>1 cup cooked breakfast sausage</ion-item>
+            <ion-item>1 cup shredded cheddar cheese</ion-item>
+            <ion-item>1/2 cup salsa</ion-item>
+            <ion-item>1/4 cup chopped fresh cilantro</ion-item>
+            <ion-item><b>Instructions:</b></ion-item>
+            <ion-item
+              >1. Cook the scrambled eggs and breakfast sausage.</ion-item
+            >
+            <ion-item>2. Warm the flour tortillas.</ion-item>
+            <ion-item
+              >3. Divide the scrambled eggs, sausage, and cheese among the
+              tortillas.</ion-item
+            >
+            <ion-item
+              >4. Top with salsa and chopped cilantro, then fold the tortillas
+              to form burritos.</ion-item
+            >
+          </ion-list>
+        </div>
+      </ion-accordion>
+
+      <!-- Sixth Accordion -->
+      <ion-accordion value="sixth" style="margin-bottom: 10px">
+        <ion-item slot="header" color="light">
+          <ion-label>Egg Muffins</ion-label>
+        </ion-item>
+        <div class="ion-padding" slot="content">
+          <ion-list>
+            <ion-item
+              ><b>Description: </b> Portable egg muffins with spinach,
+              mushrooms, and feta cheese.</ion-item
+            >
+            <ion-item><b>Calories:</b> 280 kcal</ion-item>
+            <ion-item>6 large eggs</ion-item>
+            <ion-item>1 cup chopped spinach</ion-item>
+            <ion-item>1/2 cup chopped mushrooms</ion-item>
+            <ion-item>1/4 cup crumbled feta cheese</ion-item>
+            <ion-item>1/4 cup diced bell pepper</ion-item>
+            <ion-item>1/4 cup diced onion</ion-item>
+            <ion-item>1/2 tsp salt</ion-item>
+            <ion-item>1/4 tsp black pepper</ion-item>
+            <ion-item><b>Instructions:</b></ion-item>
+            <ion-item
+              >1. Preheat the oven to 350°F (175°C). Grease a muffin
+              tin.</ion-item
+            >
+            <ion-item
+              >2. In a bowl, whisk together eggs, salt, and black
+              pepper.</ion-item
+            >
+            <ion-item
+              >3. Stir in spinach, mushrooms, feta cheese, bell pepper, and
+              onion.</ion-item
+            >
+            <ion-item
+              >4. Divide the mixture evenly among the muffin cups.</ion-item
+            >
+            <ion-item
+              >5. Bake for 20-25 minutes or until set and golden
+              brown.</ion-item
+            >
+          </ion-list>
+        </div>
+      </ion-accordion>
+
+      <!-- Seventh Accordion -->
+      <ion-accordion value="seventh" style="margin-bottom: 10px">
+        <ion-item slot="header" color="light">
+          <ion-label>Breakfast Casserole</ion-label>
+        </ion-item>
+        <div class="ion-padding" slot="content">
+          <ion-list>
+            <ion-item
+              ><b>Description: </b> A comforting breakfast casserole with hash
+              browns, sausage, and cheese.</ion-item
+            >
+            <ion-item><b>Calories:</b> 420 kcal</ion-item>
+            <ion-item>1 lb breakfast sausage</ion-item>
+            <ion-item>1 (20 oz) package frozen hash brown potatoes</ion-item>
+            <ion-item>1 cup shredded cheddar cheese</ion-item>
+            <ion-item>8 large eggs</ion-item>
+            <ion-item>1 cup milk</ion-item>
+            <ion-item>1/2 tsp salt</ion-item>
+            <ion-item>1/4 tsp black pepper</ion-item>
+            <ion-item><b>Instructions:</b></ion-item>
+            <ion-item
+              >1. Preheat the oven to 350°F (175°C). Grease a 9x13-inch baking
+              dish.</ion-item
+            >
+            <ion-item
+              >2. Cook the breakfast sausage in a skillet over medium heat until
+              browned.</ion-item
+            >
+            <ion-item
+              >3. In a large bowl, combine cooked sausage, hash browns, and
+              shredded cheese.</ion-item
+            >
+            <ion-item
+              >4. In another bowl, whisk together eggs, milk, salt, and black
+              pepper.</ion-item
+            >
+            <ion-item
+              >5. Pour the egg mixture over the sausage and hash brown mixture
+              in the baking dish.</ion-item
+            >
+            <ion-item
+              >6. Bake for 45-50 minutes or until set and golden
+              brown.</ion-item
+            >
+          </ion-list>
+        </div>
+      </ion-accordion>
+
+      <!-- Eighth Accordion -->
+      <ion-accordion value="eighth" style="margin-bottom: 10px">
+        <ion-item slot="header" color="light">
+          <ion-label>Breakfast Quesadilla</ion-label>
+        </ion-item>
+        <div class="ion-padding" slot="content">
+          <ion-list>
+            <ion-item
+              ><b>Description: </b> A cheesy breakfast quesadilla with scrambled
+              eggs, bacon, and avocado.</ion-item
+            >
+            <ion-item><b>Calories:</b> 380 kcal</ion-item>
+            <ion-item>2 large flour tortillas</ion-item>
+            <ion-item>4 large eggs, scrambled</ion-item>
+            <ion-item>4 strips cooked bacon, chopped</ion-item>
+            <ion-item>1 ripe avocado, sliced</ion-item>
+            <ion-item>1 cup shredded cheddar cheese</ion-item>
+            <ion-item>1/4 cup salsa or pico de gallo</ion-item>
+            <ion-item><b>Instructions:</b></ion-item>
+            <ion-item
+              >1. Heat a large skillet over medium heat. Place one tortilla in
+              the skillet.</ion-item
+            >
+            <ion-item
+              >2. Spread half of the shredded cheese evenly over the
+              tortilla.</ion-item
+            >
+            <ion-item
+              >3. Top with scrambled eggs, chopped bacon, avocado slices, and
+              salsa or pico de gallo.</ion-item
+            >
+            <ion-item
+              >4. Sprinkle the remaining cheese over the toppings and place the
+              second tortilla on top.</ion-item
+            >
+            <ion-item
+              >5. Cook for 2-3 minutes on each side or until the tortilla is
+              golden brown and the cheese is melted.</ion-item
+            >
+            <ion-item>6. Cut into wedges and serve hot.</ion-item>
+          </ion-list>
+        </div>
+      </ion-accordion>
+
+      <!-- Ninth Accordion -->
+      <ion-accordion value="ninth" style="margin-bottom: 10px">
+        <ion-item slot="header" color="light">
+          <ion-label>Acai Bowl</ion-label>
+        </ion-item>
+        <div class="ion-padding" slot="content">
+          <ion-list>
+            <ion-item
+              ><b>Description: </b> A refreshing acai bowl topped with granola,
+              fresh fruits, and honey.</ion-item
+            >
+            <ion-item><b>Calories:</b> 350 kcal</ion-item>
+            <ion-item>2 frozen acai packs</ion-item>
+            <ion-item>1/2 cup almond milk</ion-item>
+            <ion-item>1 banana</ion-item>
+            <ion-item
+              >1 cup mixed berries (strawberries, blueberries,
+              raspberries)</ion-item
+            >
+            <ion-item>1/4 cup granola</ion-item>
+            <ion-item>2 tbsp honey</ion-item>
+            <ion-item><b>Instructions:</b></ion-item>
+            <ion-item
+              >1. In a blender, combine the frozen acai packs, almond milk, and
+              banana. Blend until smooth.</ion-item
+            >
+            <ion-item
+              >2. Pour the acai mixture into a bowl and top with mixed berries,
+              granola, and honey.</ion-item
+            >
+          </ion-list>
+        </div>
+      </ion-accordion>
+
+      <!-- Tenth Accordion -->
+      <ion-accordion value="tenth" style="margin-bottom: 10px">
+        <ion-item slot="header" color="light">
+          <ion-label>French Toast</ion-label>
+        </ion-item>
+        <div class="ion-padding" slot="content">
+          <ion-list>
+            <ion-item
+              ><b>Description: </b> Classic French toast made with thick slices
+              of bread, dipped in a cinnamon and vanilla egg mixture, and cooked
+              until golden brown.</ion-item
+            >
+            <ion-item><b>Calories:</b> 320 kcal</ion-item>
+            <ion-item
+              >4 thick slices of bread (challah, brioche, or French
+              bread)</ion-item
+            >
+            <ion-item>2 large eggs</ion-item>
+            <ion-item>1/2 cup milk</ion-item>
+            <ion-item>1 tsp vanilla extract</ion-item>
+            <ion-item>1/2 tsp ground cinnamon</ion-item>
+            <ion-item>1 tbsp butter</ion-item>
+            <ion-item><b>Instructions:</b></ion-item>
+            <ion-item
+              >1. In a shallow dish, whisk together the eggs, milk, vanilla
+              extract, and ground cinnamon.</ion-item
+            >
+            <ion-item
+              >2. Dip each slice of bread into the egg mixture, allowing it to
+              soak for a few seconds on each side.</ion-item
+            >
+            <ion-item
+              >3. Heat a large skillet or griddle over medium heat and melt the
+              butter.</ion-item
+            >
+            <ion-item
+              >4. Cook the soaked bread slices for 2-3 minutes on each side or
+              until golden brown.</ion-item
+            >
+            <ion-item
+              >5. Serve hot with maple syrup, powdered sugar, or your favorite
+              toppings.</ion-item
+            >
           </ion-list>
         </div>
       </ion-accordion>
