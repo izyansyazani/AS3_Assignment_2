@@ -1,6 +1,8 @@
-<ion-header [translucent]="true">
+<ion-header [translucent]="true" style="--background: var(--ion-color-custom)">
   <ion-toolbar>
-    <ion-title style="text-align: center">
+    <ion-title
+      style="text-align: center; --color: var(--ion-color-custom-contrast)"
+    >
       Your Ultimate Guide to Tasty and <br />
       Healthy Home Cooking
     </ion-title>
@@ -30,6 +32,10 @@
           expand="full"
           class="rounded-button"
           routerLink="/breakfast"
+          style="
+            --background: var(--ion-color-custom);
+            --color: var(--ion-color-custom-contrast);
+          "
         >
           Breakfast
         </ion-button>
@@ -37,14 +43,30 @@
 
       <!-- Button 2 -->
       <ion-col size="4">
-        <ion-button expand="full" class="rounded-button" routerLink="/dessert">
+        <ion-button
+          expand="full"
+          class="rounded-button"
+          routerLink="/dessert"
+          style="
+            --background: var(--ion-color-custom);
+            --color: var(--ion-color-custom-contrast);
+          "
+        >
           Dessert
         </ion-button>
       </ion-col>
 
       <!-- Button 3 -->
       <ion-col size="4">
-        <ion-button expand="full" class="rounded-button" routerLink="/asian">
+        <ion-button
+          expand="full"
+          class="rounded-button"
+          routerLink="/asian"
+          style="
+            --background: var(--ion-color-custom);
+            --color: var(--ion-color-custom-contrast);
+          "
+        >
           Asian
         </ion-button>
       </ion-col>
@@ -53,14 +75,30 @@
     <ion-row style="align-items: center">
       <!-- Button 4 -->
       <ion-col size="4">
-        <ion-button expand="full" class="rounded-button" routerLink="/dinner">
+        <ion-button
+          expand="full"
+          class="rounded-button"
+          routerLink="/dinner"
+          style="
+            --background: var(--ion-color-custom);
+            --color: var(--ion-color-custom-contrast);
+          "
+        >
           Dinner
         </ion-button>
       </ion-col>
 
       <!-- Button 5 -->
       <ion-col size="4">
-        <ion-button expand="full" class="rounded-button" routerLink="/italian">
+        <ion-button
+          expand="full"
+          class="rounded-button"
+          routerLink="/italian"
+          style="
+            --background: var(--ion-color-custom);
+            --color: var(--ion-color-custom-contrast);
+          "
+        >
           Italian
         </ion-button>
       </ion-col>
@@ -71,6 +109,10 @@
           expand="full"
           class="rounded-button"
           routerLink="/under30mins"
+          style="
+            --background: var(--ion-color-custom);
+            --color: var(--ion-color-custom-contrast);
+          "
         >
           Under 30 mins
         </ion-button>
@@ -114,7 +156,7 @@
       padding-bottom: 0;
     "
   >
-    <ion-card-header>
+    <ion-card-header style="--background: var(--ion-color-custom)">
       <ion-card-title class="ion-text-center"> Important ! </ion-card-title>
     </ion-card-header>
 
