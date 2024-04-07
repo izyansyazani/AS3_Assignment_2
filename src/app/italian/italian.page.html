@@ -1,6 +1,6 @@
 <ion-header [translucent]="true">
   <ion-toolbar color="light">
-    <ion-title> What do you want to cook today? </ion-title>
+    <ion-title style="text-align: center"> Italian </ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -19,33 +19,55 @@
       flex-direction: column;
       align-items: center;
       height: 100vh;
-      margin-top: 10px; /* Adjust this value to bring it closer */
-      position: relative; /* Add relative positioning */
-      z-index: 2; /* Increase z-index */
+      margin-top: 40px;
+      position: relative;
+      z-index: 2;
     "
   >
-    <!-- Insert the ion-searchbar within the same div -->
-    <ion-searchbar
-      placeholder="Search Recipes"
-      style="width: 90%; margin-bottom: 20px"
-      color="light"
-    ></ion-searchbar>
-
     <ion-accordion-group style="width: 90%; z-index: 1">
       <!-- First Accordion -->
       <ion-accordion value="first" style="margin-bottom: 10px">
         <ion-item slot="header" color="light">
-          <ion-label>Spaghetti</ion-label>
+          <ion-label>Cacio e Pepe</ion-label>
         </ion-item>
         <div class="ion-padding" slot="content">
           <ion-list>
-            <ion-item>225g spaghetti</ion-item>
-            <ion-item>1 tbsp olive oil</ion-item>
-            <ion-item>3 cloves garlic</ion-item>
-            <ion-item>1 can (14 oz) crushed tomatoes</ion-item>
             <ion-item
-              >Dried oregano, basil, salt, pepper to taste, Parmesan cheese
-              (Optional)</ion-item
+              ><b>Description: </b> Crispy breaded chicken served with a rich
+              Japanese curry sauce.</ion-item
+            >
+            <ion-item><b>Calories:</b> 450 kcal</ion-item>
+            <ion-item>2 boneless chicken breasts</ion-item>
+            <ion-item>1 cup panko breadcrumbs</ion-item>
+            <ion-item>1 egg, beaten</ion-item>
+            <ion-item>2 cups cooked white rice</ion-item>
+            <ion-item>1 onion, sliced</ion-item>
+            <ion-item>2 carrots, chopped</ion-item>
+            <ion-item>2 potatoes, diced</ion-item>
+            <ion-item>3 cups chicken broth</ion-item>
+            <ion-item>2 tbsp vegetable oil</ion-item>
+            <ion-item><b>Instructions:</b></ion-item>
+            <ion-item
+              >1. Season the chicken breasts with salt and pepper. Dip each
+              chicken breast in the beaten egg, then coat with panko
+              breadcrumbs.</ion-item
+            >
+            <ion-item
+              >2. Heat vegetable oil in a pan over medium-high heat. Fry the
+              chicken until golden brown and crispy, about 5-7 minutes per side.
+              Remove and set aside.</ion-item
+            >
+            <ion-item
+              >3. In the same pan, add more oil if needed and sauté the onion,
+              carrots, and potatoes until softened.</ion-item
+            >
+            <ion-item
+              >4. Add the chicken broth and bring to a boil. Reduce heat and
+              simmer until vegetables are tender.</ion-item
+            >
+            <ion-item
+              >5. Slice the fried chicken and serve with the vegetable curry
+              over cooked white rice.</ion-item
             >
           </ion-list>
         </div>
@@ -54,23 +76,46 @@
       <!-- Second Accordion -->
       <ion-accordion value="second" style="margin-bottom: 10px">
         <ion-item slot="header" color="light">
-          <ion-label>Shepherd's Pie</ion-label>
+          <ion-label>Pesto Genovese</ion-label>
         </ion-item>
         <div class="ion-padding" slot="content">
           <ion-list>
-            <ion-item><b>Filling:</b></ion-item>
-            <ion-item>500g ground lamb or beef</ion-item>
-            <ion-item>Onion, Carrots, Garlic (diced)</ion-item>
-            <ion-item>Frozen peas</ion-item>
-            <ion-item>2 tbsp tomato paste</ion-item>
-            <ion-item>1 cup broth</ion-item>
-            <ion-item>2 tsp Worcestershire sauce, 1 tsp dried thyme</ion-item>
-            <ion-item>Salt and pepper</ion-item>
-
-            <ion-item><b>Mashed Potatoes:</b></ion-item>
-            <ion-item>4 large potatoes</ion-item>
-            <ion-item>1/2 cup milk, 2 tbsp butter</ion-item>
-            <ion-item>Salt and pepper</ion-item>
+            <ion-item
+              ><b>Description: </b> Tender chicken marinated in yogurt and
+              spices, grilled and served in a creamy tomato sauce.</ion-item
+            >
+            <ion-item><b>Calories:</b> 480 kcal</ion-item>
+            <ion-item>2 boneless chicken breasts, cut into cubes</ion-item>
+            <ion-item>1 cup plain yogurt</ion-item>
+            <ion-item>3 tbsp tikka masala spice mix</ion-item>
+            <ion-item>1 onion, finely chopped</ion-item>
+            <ion-item>2 cloves garlic, minced</ion-item>
+            <ion-item>1 can (14 oz) crushed tomatoes</ion-item>
+            <ion-item>1 cup heavy cream</ion-item>
+            <ion-item>2 tbsp vegetable oil</ion-item>
+            <ion-item><b>Instructions:</b></ion-item>
+            <ion-item
+              >1. In a bowl, combine yogurt and tikka masala spice mix. Add
+              chicken cubes and marinate for at least 2 hours or overnight in
+              the refrigerator.</ion-item
+            >
+            <ion-item
+              >2. Heat vegetable oil in a pan over medium heat. Sauté onion and
+              garlic until translucent.</ion-item
+            >
+            <ion-item
+              >3. Add the marinated chicken to the pan and cook until browned on
+              all sides.</ion-item
+            >
+            <ion-item
+              >4. Stir in the crushed tomatoes and simmer for 15-20
+              minutes.</ion-item
+            >
+            <ion-item
+              >5. Stir in the heavy cream and cook for an additional 5 minutes
+              until heated through.</ion-item
+            >
+            <ion-item>6. Serve hot with naan bread or rice.</ion-item>
           </ion-list>
         </div>
       </ion-accordion>
@@ -78,19 +123,46 @@
       <!-- Third Accordion -->
       <ion-accordion value="third" style="margin-bottom: 10px">
         <ion-item slot="header" color="light">
-          <ion-label>Buttermilk Chicken</ion-label>
+          <ion-label>Caponata</ion-label>
         </ion-item>
         <div class="ion-padding" slot="content">
           <ion-list>
-            <ion-item>4 boneless, skinless chicken breasts</ion-item>
-            <ion-item>1 cup buttermilk</ion-item>
-            <ion-item>1 cup all-purpose flour</ion-item>
-            <ion-item>1 teaspoon garlic powder</ion-item>
-            <ion-item>1 teaspoon onion powder</ion-item>
-            <ion-item>1 teaspoon paprika</ion-item>
-            <ion-item>1/2 teaspoon cayenne pepper</ion-item>
-            <ion-item>Salt and pepper to taste</ion-item>
-            <ion-item>Vegetable oil for frying</ion-item>
+            <ion-item
+              ><b>Description: </b> Thinly sliced marinated beef, wrapped in
+              pita bread with fresh veggies and tahini sauce.</ion-item
+            >
+            <ion-item><b>Calories:</b> 520 kcal</ion-item>
+            <ion-item>1 lb beef sirloin, thinly sliced</ion-item>
+            <ion-item>4 pita breads</ion-item>
+            <ion-item>1 cup plain yogurt</ion-item>
+            <ion-item>2 cloves garlic, minced</ion-item>
+            <ion-item>1 lemon, juiced</ion-item>
+            <ion-item>1 tsp cumin</ion-item>
+            <ion-item>1 tsp paprika</ion-item>
+            <ion-item>1 cucumber, thinly sliced</ion-item>
+            <ion-item>1 tomato, diced</ion-item>
+            <ion-item>1/2 cup tahini sauce</ion-item>
+            <ion-item><b>Instructions:</b></ion-item>
+            <ion-item
+              >1. In a bowl, combine yogurt, minced garlic, lemon juice, cumin,
+              and paprika. Add beef slices and marinate for at least 1
+              hour.</ion-item
+            >
+            <ion-item
+              >2. Heat a skillet over medium-high heat. Cook the marinated beef
+              slices until browned and cooked through.</ion-item
+            >
+            <ion-item
+              >3. Warm the pita breads in the oven or on a skillet until
+              slightly toasted.</ion-item
+            >
+            <ion-item
+              >4. Spread a layer of tahini sauce on each pita bread. Add cooked
+              beef slices, cucumber slices, and diced tomatoes.</ion-item
+            >
+            <ion-item
+              >5. Roll up the pita breads and serve immediately.</ion-item
+            >
           </ion-list>
         </div>
       </ion-accordion>
@@ -98,19 +170,44 @@
       <!-- Fourth Accordion -->
       <ion-accordion value="fourth" style="margin-bottom: 10px">
         <ion-item slot="header" color="light">
-          <ion-label>Fried Chicken</ion-label>
+          <ion-label>Minestrone</ion-label>
         </ion-item>
         <div class="ion-padding" slot="content">
           <ion-list>
-            <ion-item>4 pieces of chicken (legs, thighs, or breasts)</ion-item>
-            <ion-item>1 cup all-purpose flour</ion-item>
-            <ion-item>1 teaspoon garlic powder</ion-item>
-            <ion-item>1 teaspoon onion powder</ion-item>
-            <ion-item>1/2 teaspoon paprika</ion-item>
-            <ion-item>1/2 teaspoon dried thyme</ion-item>
-            <ion-item>1/2 teaspoon dried oregano</ion-item>
-            <ion-item>Salt and pepper to taste</ion-item>
-            <ion-item>Vegetable oil for frying</ion-item>
+            <ion-item
+              ><b>Description: </b> A hearty Italian vegetable soup made with
+              fresh vegetables, beans, and pasta.</ion-item
+            >
+            <ion-item><b>Calories:</b> 210 kcal</ion-item>
+            <ion-item>1 can (14 oz) cannellini beans, drained</ion-item>
+            <ion-item>1 cup chopped carrots</ion-item>
+            <ion-item>1 cup chopped celery</ion-item>
+            <ion-item>1 cup chopped zucchini</ion-item>
+            <ion-item>1 onion, chopped</ion-item>
+            <ion-item>2 cloves garlic, minced</ion-item>
+            <ion-item>1 can (14 oz) diced tomatoes</ion-item>
+            <ion-item>4 cups vegetable broth</ion-item>
+            <ion-item>1 cup small pasta (like ditalini or elbow)</ion-item>
+            <ion-item>2 tbsp olive oil</ion-item>
+            <ion-item><b>Instructions:</b></ion-item>
+            <ion-item
+              >1. In a large pot, heat olive oil over medium heat. Add chopped
+              onions, carrots, celery, and garlic. Sauté until vegetables are
+              softened.</ion-item
+            >
+            <ion-item
+              >2. Add zucchini, diced tomatoes, cannellini beans, and vegetable
+              broth. Bring to a boil, then reduce heat and simmer for 20
+              minutes.</ion-item
+            >
+            <ion-item
+              >3. Add the pasta and cook for an additional 10 minutes or until
+              pasta is tender.</ion-item
+            >
+            <ion-item
+              >4. Season with salt and pepper to taste. Serve hot with crusty
+              bread.</ion-item
+            >
           </ion-list>
         </div>
       </ion-accordion>
@@ -118,22 +215,299 @@
       <!-- Fifth Accordion -->
       <ion-accordion value="fifth" style="margin-bottom: 10px">
         <ion-item slot="header" color="light">
-          <ion-label>Beef Curry</ion-label>
+          <ion-label>Osso Buco</ion-label>
         </ion-item>
         <div class="ion-padding" slot="content">
           <ion-list>
-            <ion-item>500g beef, cut into cubes</ion-item>
-            <ion-item>1 large onion, finely chopped</ion-item>
-            <ion-item>3 cloves garlic, minced</ion-item>
-            <ion-item>1 thumb-sized ginger, grated</ion-item>
-            <ion-item>2 tablespoons curry powder</ion-item>
-            <ion-item>1 teaspoon ground cumin</ion-item>
-            <ion-item>1 teaspoon ground coriander</ion-item>
-            <ion-item>1/2 teaspoon turmeric powder</ion-item>
-            <ion-item>1/2 teaspoon chili powder (adjust to taste)</ion-item>
-            <ion-item>1 can (400ml) coconut milk</ion-item>
-            <ion-item>2 large potatoes, peeled and diced</ion-item>
+            <ion-item
+              ><b>Description: </b> Tender veal shanks braised with vegetables,
+              white wine, and broth, served with gremolata.</ion-item
+            >
+            <ion-item><b>Calories:</b> 580 kcal</ion-item>
+            <ion-item>4 veal shanks</ion-item>
+            <ion-item>1 onion, chopped</ion-item>
+            <ion-item>1 carrot, chopped</ion-item>
+            <ion-item>1 celery stalk, chopped</ion-item>
+            <ion-item>2 cloves garlic, minced</ion-item>
+            <ion-item>1 can (14 oz) diced tomatoes</ion-item>
+            <ion-item>2 cups beef broth</ion-item>
+            <ion-item>1 cup dry white wine</ion-item>
+            <ion-item>2 tbsp olive oil</ion-item>
+            <ion-item>1/4 cup chopped fresh parsley</ion-item>
+            <ion-item>2 tbsp grated lemon zest</ion-item>
+            <ion-item><b>Instructions:</b></ion-item>
+            <ion-item
+              >1. Season veal shanks with salt and pepper. In a large skillet,
+              heat olive oil over medium-high heat. Brown veal shanks on all
+              sides. Remove and set aside.</ion-item
+            >
+            <ion-item
+              >2. In the same skillet, add more olive oil if needed. Sauté
+              onion, carrot, celery, and garlic until softened.</ion-item
+            >
+            <ion-item
+              >3. Add diced tomatoes, beef broth, and white wine. Bring to a
+              boil.</ion-item
+            >
+            <ion-item
+              >4. Return the browned veal shanks to the skillet. Reduce heat to
+              low, cover, and simmer for 1.5 to 2 hours or until veal is tender.
+              Check occasionally and add more broth if needed.</ion-item
+            >
+            <ion-item
+              >5. In a small bowl, combine chopped parsley and grated lemon
+              zest. Sprinkle over the osso buco before serving.</ion-item
+            >
+          </ion-list>
+        </div>
+      </ion-accordion>
+
+      <!-- Sixth Accordion -->
+      <ion-accordion value="sixth" style="margin-bottom: 10px">
+        <ion-item slot="header" color="light">
+          <ion-label>Risotto alla Milanese</ion-label>
+        </ion-item>
+        <div class="ion-padding" slot="content">
+          <ion-list>
+            <ion-item
+              ><b>Description: </b> Creamy Italian rice dish flavored with
+              saffron, butter, and Parmesan cheese.</ion-item
+            >
+            <ion-item><b>Calories:</b> 420 kcal</ion-item>
+            <ion-item>1 1/2 cups Arborio rice</ion-item>
+            <ion-item>4 cups chicken broth</ion-item>
+            <ion-item>1 onion, finely chopped</ion-item>
+            <ion-item>1/2 cup dry white wine</ion-item>
+            <ion-item>1/2 tsp saffron threads</ion-item>
+            <ion-item>1/4 cup grated Parmesan cheese</ion-item>
+            <ion-item>2 tbsp butter</ion-item>
+            <ion-item>2 tbsp olive oil</ion-item>
+            <ion-item><b>Instructions:</b></ion-item>
+            <ion-item
+              >1. In a small saucepan, heat chicken broth over low heat. Keep
+              warm.</ion-item
+            >
+            <ion-item
+              >2. In a large skillet, heat olive oil and butter over medium
+              heat. Add chopped onion and sauté until translucent.</ion-item
+            >
+            <ion-item
+              >3. Add Arborio rice to the skillet and stir to coat with the oil
+              and butter.</ion-item
+            >
+            <ion-item
+              >4. Add white wine to the skillet and stir until absorbed by the
+              rice.</ion-item
+            >
+            <ion-item
+              >5. Add a ladleful of warm chicken broth to the skillet and stir
+              until absorbed by the rice. Continue adding broth, one ladleful at
+              a time, stirring constantly, until rice is tender and
+              creamy.</ion-item
+            >
+            <ion-item
+              >6. Stir in saffron threads and grated Parmesan cheese. Season
+              with salt and pepper to taste.</ion-item
+            >
+            <ion-item
+              >7. Remove from heat, cover, and let rest for 2-3 minutes before
+              serving.</ion-item
+            >
+          </ion-list>
+        </div>
+      </ion-accordion>
+
+      <!-- Seventh Accordion -->
+      <ion-accordion value="seventh" style="margin-bottom: 10px">
+        <ion-item slot="header" color="light">
+          <ion-label>Amatriciana</ion-label>
+        </ion-item>
+        <div class="ion-padding" slot="content">
+          <ion-list>
+            <ion-item
+              ><b>Description: </b> Spaghetti pasta served with a sauce made
+              from tomatoes, pancetta, and Pecorino cheese.</ion-item
+            >
+            <ion-item><b>Calories:</b> 480 kcal</ion-item>
+            <ion-item>8 oz spaghetti pasta</ion-item>
+            <ion-item>1 can (14 oz) crushed tomatoes</ion-item>
+            <ion-item>4 oz pancetta, diced</ion-item>
+            <ion-item>1 onion, chopped</ion-item>
+            <ion-item>2 cloves garlic, minced</ion-item>
+            <ion-item>1/2 cup grated Pecorino cheese</ion-item>
+            <ion-item>2 tbsp olive oil</ion-item>
+            <ion-item>1/4 tsp red pepper flakes (optional)</ion-item>
+            <ion-item><b>Instructions:</b></ion-item>
+            <ion-item
+              >1. Cook spaghetti pasta in boiling salted water until al dente.
+              Drain and set aside.</ion-item
+            >
+            <ion-item
+              >2. In a large skillet, heat olive oil over medium heat. Add diced
+              pancetta and sauté until crispy.</ion-item
+            >
+            <ion-item
+              >3. Add chopped onion and minced garlic to the skillet. Sauté
+              until translucent.</ion-item
+            >
+            <ion-item
+              >4. Add crushed tomatoes and red pepper flakes (if using) to the
+              skillet. Simmer for 10-15 minutes.</ion-item
+            >
+            <ion-item
+              >5. Add cooked spaghetti pasta to the skillet and toss to coat
+              with the sauce.</ion-item
+            >
+            <ion-item
+              >6. Remove from heat and stir in grated Pecorino cheese. Serve
+              hot.</ion-item
+            >
+          </ion-list>
+        </div>
+      </ion-accordion>
+
+      <!-- Eighth Accordion -->
+      <ion-accordion value="eighth" style="margin-bottom: 10px">
+        <ion-item slot="header" color="light">
+          <ion-label>Bruschetta</ion-label>
+        </ion-item>
+        <div class="ion-padding" slot="content">
+          <ion-list>
+            <ion-item
+              ><b>Description: </b> Toasted bread topped with a mixture of
+              tomatoes, basil, garlic, and olive oil.</ion-item
+            >
+            <ion-item><b>Calories:</b> 160 kcal</ion-item>
+            <ion-item>4 slices Italian bread</ion-item>
+            <ion-item>2 tomatoes, diced</ion-item>
+            <ion-item>2 cloves garlic, minced</ion-item>
+            <ion-item>1/4 cup fresh basil, chopped</ion-item>
+            <ion-item>2 tbsp olive oil</ion-item>
+            <ion-item>1 tsp balsamic vinegar</ion-item>
             <ion-item>Salt and pepper to taste</ion-item>
+            <ion-item><b>Instructions:</b></ion-item>
+            <ion-item
+              >1. Preheat oven to 400°F (200°C). Place bread slices on a baking
+              sheet and toast in the oven until golden brown.</ion-item
+            >
+            <ion-item
+              >2. In a bowl, combine diced tomatoes, minced garlic, chopped
+              basil, olive oil, and balsamic vinegar. Season with salt and
+              pepper.</ion-item
+            >
+            <ion-item
+              >3. Top toasted bread slices with the tomato mixture. Serve
+              immediately.</ion-item
+            >
+          </ion-list>
+        </div>
+      </ion-accordion>
+
+      <!-- Ninth Accordion -->
+      <ion-accordion value="ninth" style="margin-bottom: 10px">
+        <ion-item slot="header" color="light">
+          <ion-label>Cannoli</ion-label>
+        </ion-item>
+        <div class="ion-padding" slot="content">
+          <ion-list>
+            <ion-item
+              ><b>Description: </b> Crispy fried pastry shells filled with a
+              sweet and creamy ricotta cheese mixture.</ion-item
+            >
+            <ion-item><b>Calories:</b> 280 kcal</ion-item>
+            <ion-item>8 cannoli shells</ion-item>
+            <ion-item>1 cup ricotta cheese</ion-item>
+            <ion-item>1/2 cup powdered sugar</ion-item>
+            <ion-item>1/4 cup chopped chocolate</ion-item>
+            <ion-item>1/4 cup chopped pistachios</ion-item>
+            <ion-item>1/4 tsp vanilla extract</ion-item>
+            <ion-item>1/4 tsp cinnamon</ion-item>
+            <ion-item>Oil for frying</ion-item>
+            <ion-item><b>Instructions:</b></ion-item>
+            <ion-item
+              >1. In a bowl, combine ricotta cheese, powdered sugar, vanilla
+              extract, and cinnamon. Mix well.</ion-item
+            >
+            <ion-item
+              >2. Fold in chopped chocolate and chopped pistachios into the
+              ricotta mixture.</ion-item
+            >
+            <ion-item
+              >3. Spoon the ricotta mixture into a piping bag fitted with a
+              large star tip.</ion-item
+            >
+            <ion-item
+              >4. Pipe the ricotta mixture into the cannoli shells, filling from
+              both ends.</ion-item
+            >
+            <ion-item
+              >5. Heat oil in a deep fryer or large skillet to 375°F (190°C).
+              Fry the filled cannoli shells until golden brown.</ion-item
+            >
+            <ion-item
+              >6. Drain on paper towels and let cool completely before serving.
+              Dust with powdered sugar if desired.</ion-item
+            >
+          </ion-list>
+        </div>
+      </ion-accordion>
+
+      <!-- Tenth Accordion -->
+      <ion-accordion value="tenth" style="margin-bottom: 10px">
+        <ion-item slot="header" color="light">
+          <ion-label>Tiramisu</ion-label>
+        </ion-item>
+        <div class="ion-padding" slot="content">
+          <ion-list>
+            <ion-item
+              ><b>Description: </b> Layered dessert made with ladyfingers soaked
+              in coffee and rum, layered with a mascarpone cheese
+              mixture.</ion-item
+            >
+            <ion-item><b>Calories:</b> 320 kcal</ion-item>
+            <ion-item>1 cup mascarpone cheese</ion-item>
+            <ion-item>24 ladyfingers</ion-item>
+            <ion-item>1 cup strong brewed coffee, cooled</ion-item>
+            <ion-item>1/2 cup sugar</ion-item>
+            <ion-item>3 eggs, separated</ion-item>
+            <ion-item>2 tbsp rum</ion-item>
+            <ion-item>Cocoa powder for dusting</ion-item>
+            <ion-item><b>Instructions:</b></ion-item>
+            <ion-item
+              >1. In a bowl, beat egg yolks and sugar until light and
+              fluffy.</ion-item
+            >
+            <ion-item
+              >2. Add mascarpone cheese to the egg yolk mixture and beat until
+              smooth.</ion-item
+            >
+            <ion-item
+              >3. In a separate bowl, beat egg whites until stiff peaks
+              form.</ion-item
+            >
+            <ion-item
+              >4. Gently fold the beaten egg whites into the mascarpone mixture.
+              Set aside.</ion-item
+            >
+            <ion-item
+              >5. In a shallow dish, combine cooled coffee and rum.</ion-item
+            >
+            <ion-item
+              >6. Quickly dip each ladyfinger into the coffee mixture and line
+              the bottom of a serving dish.</ion-item
+            >
+            <ion-item
+              >7. Spread half of the mascarpone mixture over the ladyfingers.
+              Repeat with another layer of dipped ladyfingers and mascarpone
+              mixture.</ion-item
+            >
+            <ion-item
+              >8. Cover and refrigerate for at least 4 hours or
+              overnight.</ion-item
+            >
+            <ion-item
+              >9. Before serving, dust the top with cocoa powder.</ion-item
+            >
           </ion-list>
         </div>
       </ion-accordion>
