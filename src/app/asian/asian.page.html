@@ -19,34 +19,46 @@
       flex-direction: column;
       align-items: center;
       height: 100vh;
-      margin-top: 10px; /* Adjust this value to bring it closer */
-      position: relative; /* Add relative positioning */
-      z-index: 2; /* Increase z-index */
+      margin-top: 40px;
+      position: relative;
+      z-index: 2;
     "
   >
-    <!-- Insert the ion-searchbar within the same div -->
-    <ion-searchbar
-      placeholder="Search Recipes"
-      style="width: 90%; margin-bottom: 20px"
-      color="light"
-    ></ion-searchbar>
-
     <ion-accordion-group style="width: 90%; z-index: 1">
       <!-- First Accordion -->
       <ion-accordion value="first" style="margin-bottom: 10px">
         <ion-item slot="header" color="light">
-          <ion-label>Spaghetti</ion-label>
+          <ion-label>Indonesian Soto Ayam</ion-label>
         </ion-item>
         <div class="ion-padding" slot="content">
           <ion-list>
-            <ion-item>225g spaghetti</ion-item>
-            <ion-item>1 tbsp olive oil</ion-item>
-            <ion-item>3 cloves garlic</ion-item>
-            <ion-item>1 can (14 oz) crushed tomatoes</ion-item>
             <ion-item
-              >Dried oregano, basil, salt, pepper to taste, Parmesan cheese
-              (Optional)</ion-item
+              ><b>Description: </b> A fragrant Indonesian chicken soup with rich
+              spices.</ion-item
             >
+            <ion-item><b>Calories:</b> 450 kcal</ion-item>
+            <ion-item>1 whole chicken, cut into pieces</ion-item>
+            <ion-item>2 stalks lemongrass, bruised</ion-item>
+            <ion-item>3 kaffir lime leaves</ion-item>
+            <ion-item>3 cloves garlic</ion-item>
+            <ion-item>2-inch ginger, sliced</ion-item>
+            <ion-item>2 tsp turmeric powder</ion-item>
+            <ion-item>1 tsp coriander seeds</ion-item>
+            <ion-item>1 tsp cumin seeds</ion-item>
+            <ion-item>3 cups chicken broth</ion-item>
+            <ion-item>2 tbsp vegetable oil</ion-item>
+            <ion-item>Salt and pepper to taste</ion-item>
+            <ion-item><b>Instructions:</b></ion-item>
+            <ion-item
+              >1. In a pot, heat vegetable oil and sauté garlic, ginger,
+              lemongrass, and spices.</ion-item
+            >
+            <ion-item>2. Add chicken pieces and brown them.</ion-item>
+            <ion-item
+              >3. Add chicken broth, kaffir lime leaves, salt, and pepper.
+              Simmer until chicken is tender.</ion-item
+            >
+            <ion-item>4. Serve hot with steamed rice.</ion-item>
           </ion-list>
         </div>
       </ion-accordion>
@@ -54,23 +66,41 @@
       <!-- Second Accordion -->
       <ion-accordion value="second" style="margin-bottom: 10px">
         <ion-item slot="header" color="light">
-          <ion-label>Shepherd's Pie</ion-label>
+          <ion-label>Coconut Rice Balls (Klepon)</ion-label>
         </ion-item>
         <div class="ion-padding" slot="content">
           <ion-list>
+            <ion-item
+              ><b>Description: </b> Sweet Indonesian rice cakes filled with palm
+              sugar.</ion-item
+            >
+            <ion-item><b>Calories:</b> 220 kcal</ion-item>
             <ion-item><b>Filling:</b></ion-item>
-            <ion-item>500g ground lamb or beef</ion-item>
-            <ion-item>Onion, Carrots, Garlic (diced)</ion-item>
-            <ion-item>Frozen peas</ion-item>
-            <ion-item>2 tbsp tomato paste</ion-item>
-            <ion-item>1 cup broth</ion-item>
-            <ion-item>2 tsp Worcestershire sauce, 1 tsp dried thyme</ion-item>
-            <ion-item>Salt and pepper</ion-item>
-
-            <ion-item><b>Mashed Potatoes:</b></ion-item>
-            <ion-item>4 large potatoes</ion-item>
-            <ion-item>1/2 cup milk, 2 tbsp butter</ion-item>
-            <ion-item>Salt and pepper</ion-item>
+            <ion-item>500g grated coconut</ion-item>
+            <ion-item>200g palm sugar</ion-item>
+            <ion-item><b>Dough:</b></ion-item>
+            <ion-item>300g glutinous rice flour</ion-item>
+            <ion-item>200ml warm water</ion-item>
+            <ion-item>1 tsp pandan extract</ion-item>
+            <ion-item>Pinch of salt</ion-item>
+            <ion-item><b>Instructions:</b></ion-item>
+            <ion-item
+              >1. Mix grated coconut and palm sugar to make the
+              filling.</ion-item
+            >
+            <ion-item
+              >2. Combine glutinous rice flour, warm water, pandan extract, and
+              salt to make the dough.</ion-item
+            >
+            <ion-item
+              >3. Take a small portion of dough, flatten it, and add the coconut
+              filling in the center.</ion-item
+            >
+            <ion-item>4. Seal and shape into balls.</ion-item>
+            <ion-item
+              >5. Boil the rice balls until they float. Drain and
+              serve.</ion-item
+            >
           </ion-list>
         </div>
       </ion-accordion>
@@ -78,19 +108,40 @@
       <!-- Third Accordion -->
       <ion-accordion value="third" style="margin-bottom: 10px">
         <ion-item slot="header" color="light">
-          <ion-label>Buttermilk Chicken</ion-label>
+          <ion-label>Singaporean Hainanese Chicken Rice</ion-label>
         </ion-item>
         <div class="ion-padding" slot="content">
           <ion-list>
+            <ion-item
+              ><b>Description: </b> A popular Singaporean dish of fragrant
+              chicken served over rice.</ion-item
+            >
+            <ion-item><b>Calories:</b> 380 kcal</ion-item>
             <ion-item>4 boneless, skinless chicken breasts</ion-item>
-            <ion-item>1 cup buttermilk</ion-item>
-            <ion-item>1 cup all-purpose flour</ion-item>
-            <ion-item>1 teaspoon garlic powder</ion-item>
-            <ion-item>1 teaspoon onion powder</ion-item>
-            <ion-item>1 teaspoon paprika</ion-item>
-            <ion-item>1/2 teaspoon cayenne pepper</ion-item>
-            <ion-item>Salt and pepper to taste</ion-item>
-            <ion-item>Vegetable oil for frying</ion-item>
+            <ion-item>1 cup jasmine rice</ion-item>
+            <ion-item>3 cups chicken broth</ion-item>
+            <ion-item>2 cloves garlic, minced</ion-item>
+            <ion-item>1-inch ginger, grated</ion-item>
+            <ion-item>2 tbsp sesame oil</ion-item>
+            <ion-item>2 tbsp soy sauce</ion-item>
+            <ion-item>1 tsp salt</ion-item>
+            <ion-item>1 tsp sugar</ion-item>
+            <ion-item>1 cucumber, sliced</ion-item>
+            <ion-item>2 tbsp chopped cilantro</ion-item>
+            <ion-item><b>Instructions:</b></ion-item>
+            <ion-item
+              >1. Rinse rice and cook it with chicken broth, garlic, and
+              ginger.</ion-item
+            >
+            <ion-item>2. Once cooked, fluff rice and set aside.</ion-item>
+            <ion-item
+              >3. Poach chicken breasts in simmering water until cooked through.
+              Slice thinly.</ion-item
+            >
+            <ion-item
+              >4. Serve chicken over rice, garnished with cucumber, cilantro,
+              and a mixture of sesame oil, soy sauce, salt, and sugar.</ion-item
+            >
           </ion-list>
         </div>
       </ion-accordion>
@@ -98,19 +149,45 @@
       <!-- Fourth Accordion -->
       <ion-accordion value="fourth" style="margin-bottom: 10px">
         <ion-item slot="header" color="light">
-          <ion-label>Fried Chicken</ion-label>
+          <ion-label>Korean Japchae</ion-label>
         </ion-item>
         <div class="ion-padding" slot="content">
           <ion-list>
-            <ion-item>4 pieces of chicken (legs, thighs, or breasts)</ion-item>
-            <ion-item>1 cup all-purpose flour</ion-item>
-            <ion-item>1 teaspoon garlic powder</ion-item>
-            <ion-item>1 teaspoon onion powder</ion-item>
-            <ion-item>1/2 teaspoon paprika</ion-item>
-            <ion-item>1/2 teaspoon dried thyme</ion-item>
-            <ion-item>1/2 teaspoon dried oregano</ion-item>
+            <ion-item
+              ><b>Description: </b> A Korean dish of stir-fried sweet potato
+              noodles with vegetables and beef.</ion-item
+            >
+            <ion-item><b>Calories:</b> 320 kcal</ion-item>
+            <ion-item>200g sweet potato noodles (dangmyeon)</ion-item>
+            <ion-item>200g beef rib eye, thinly sliced</ion-item>
+            <ion-item>1 onion, sliced</ion-item>
+            <ion-item>1 carrot, julienned</ion-item>
+            <ion-item>1 red bell pepper, sliced</ion-item>
+            <ion-item>2 green onions, chopped</ion-item>
+            <ion-item>4 cloves garlic, minced</ion-item>
+            <ion-item>2 tbsp soy sauce</ion-item>
+            <ion-item>2 tbsp sesame oil</ion-item>
+            <ion-item>1 tbsp sugar</ion-item>
             <ion-item>Salt and pepper to taste</ion-item>
-            <ion-item>Vegetable oil for frying</ion-item>
+            <ion-item><b>Instructions:</b></ion-item>
+            <ion-item
+              >1. Boil sweet potato noodles until soft. Drain and set
+              aside.</ion-item
+            >
+            <ion-item
+              >2. Stir-fry beef until cooked. Remove and set aside.</ion-item
+            >
+            <ion-item
+              >3. In the same pan, stir-fry garlic, onion, carrot, and bell
+              pepper.</ion-item
+            >
+            <ion-item
+              >4. Add cooked noodles, beef, soy sauce, sesame oil, sugar, salt,
+              and pepper. Mix well.</ion-item
+            >
+            <ion-item
+              >5. Garnish with chopped green onions before serving.</ion-item
+            >
           </ion-list>
         </div>
       </ion-accordion>
@@ -118,22 +195,261 @@
       <!-- Fifth Accordion -->
       <ion-accordion value="fifth" style="margin-bottom: 10px">
         <ion-item slot="header" color="light">
-          <ion-label>Beef Curry</ion-label>
+          <ion-label>Japanese Chicken Teriyaki</ion-label>
         </ion-item>
         <div class="ion-padding" slot="content">
           <ion-list>
-            <ion-item>500g beef, cut into cubes</ion-item>
-            <ion-item>1 large onion, finely chopped</ion-item>
+            <ion-item
+              ><b>Description: </b> Classic Japanese dish of grilled chicken
+              glazed with teriyaki sauce.</ion-item
+            >
+            <ion-item><b>Calories:</b> 420 kcal</ion-item>
+            <ion-item>500g chicken thighs, boneless and skinless</ion-item>
+            <ion-item>1/2 cup soy sauce</ion-item>
+            <ion-item>1/4 cup mirin</ion-item>
+            <ion-item>1/4 cup sake</ion-item>
+            <ion-item>2 tbsp sugar</ion-item>
+            <ion-item>1 tbsp vegetable oil</ion-item>
+            <ion-item>1 tsp grated ginger</ion-item>
+            <ion-item>1 clove garlic, minced</ion-item>
+            <ion-item
+              >Sesame seeds and chopped green onions for garnish</ion-item
+            >
+            <ion-item><b>Instructions:</b></ion-item>
+            <ion-item
+              >1. In a pan, heat vegetable oil and sauté garlic and ginger until
+              fragrant.</ion-item
+            >
+            <ion-item
+              >2. Add chicken thighs and brown them on both sides.</ion-item
+            >
+            <ion-item
+              >3. Mix soy sauce, mirin, sake, and sugar. Pour over chicken and
+              simmer until sauce thickens.</ion-item
+            >
+            <ion-item
+              >4. Garnish with sesame seeds and chopped green onions before
+              serving.</ion-item
+            >
+          </ion-list>
+        </div>
+      </ion-accordion>
+
+      <!-- Sixth Accordion -->
+      <ion-accordion value="sixth" style="margin-bottom: 10px">
+        <ion-item slot="header" color="light">
+          <ion-label>Thai Green Curry</ion-label>
+        </ion-item>
+        <div class="ion-padding" slot="content">
+          <ion-list>
+            <ion-item
+              ><b>Description: </b> A spicy Thai dish made with chicken and
+              aromatic green curry paste.</ion-item
+            >
+            <ion-item><b>Calories:</b> 380 kcal</ion-item>
+            <ion-item>500g chicken breast, sliced</ion-item>
+            <ion-item>400ml coconut milk</ion-item>
+            <ion-item>3 tbsp green curry paste</ion-item>
+            <ion-item>1 eggplant, cut into bite-sized pieces</ion-item>
+            <ion-item>1 red bell pepper, sliced</ion-item>
+            <ion-item>1 zucchini, sliced</ion-item>
+            <ion-item>10-12 Thai basil leaves</ion-item>
+            <ion-item>2 tbsp fish sauce</ion-item>
+            <ion-item>1 tbsp palm sugar</ion-item>
+            <ion-item>1 tbsp vegetable oil</ion-item>
+            <ion-item><b>Instructions:</b></ion-item>
+            <ion-item
+              >1. In a pan, heat vegetable oil and green curry paste. Sauté
+              until fragrant.</ion-item
+            >
+            <ion-item>2. Add chicken and cook until no longer pink.</ion-item>
+            <ion-item
+              >3. Add coconut milk, eggplant, bell pepper, zucchini, fish sauce,
+              and palm sugar.</ion-item
+            >
+            <ion-item
+              >4. Simmer until vegetables are tender and sauce
+              thickens.</ion-item
+            >
+            <ion-item
+              >5. Stir in Thai basil leaves just before serving.</ion-item
+            >
+          </ion-list>
+        </div>
+      </ion-accordion>
+
+      <!-- Seventh Accordion -->
+      <ion-accordion value="seventh" style="margin-bottom: 10px">
+        <ion-item slot="header" color="light">
+          <ion-label>Malaysian Laksa</ion-label>
+        </ion-item>
+        <div class="ion-padding" slot="content">
+          <ion-list>
+            <ion-item
+              ><b>Description: </b> A spicy and tangy Malaysian noodle soup with
+              chicken and prawns.</ion-item
+            >
+            <ion-item><b>Calories:</b> 420 kcal</ion-item>
+            <ion-item>200g rice vermicelli noodles</ion-item>
+            <ion-item>400ml coconut milk</ion-item>
+            <ion-item>200g chicken breast, thinly sliced</ion-item>
+            <ion-item>150g prawns, peeled and deveined</ion-item>
+            <ion-item>2 tbsp laksa paste</ion-item>
+            <ion-item>1 cup bean sprouts</ion-item>
+            <ion-item>1 hard-boiled egg, halved</ion-item>
+            <ion-item>1 tbsp vegetable oil</ion-item>
+            <ion-item><b>Instructions:</b></ion-item>
+            <ion-item
+              >1. In a pot, heat vegetable oil and fry laksa paste until
+              fragrant.</ion-item
+            >
+            <ion-item
+              >2. Add chicken slices and cook until no longer pink.</ion-item
+            >
+            <ion-item>3. Pour in coconut milk and bring to a simmer.</ion-item>
+            <ion-item>4. Add prawns and cook until they turn pink.</ion-item>
+            <ion-item
+              >5. Cook rice vermicelli noodles according to package instructions
+              and divide into serving bowls.</ion-item
+            >
+            <ion-item
+              >6. Ladle laksa broth, chicken, and prawns over noodles.</ion-item
+            >
+            <ion-item
+              >7. Garnish with bean sprouts and a halved hard-boiled egg before
+              serving.</ion-item
+            >
+          </ion-list>
+        </div>
+      </ion-accordion>
+
+      <!-- Eighth Accordion -->
+      <ion-accordion value="eighth" style="margin-bottom: 10px">
+        <ion-item slot="header" color="light">
+          <ion-label>Vietnamese Pho</ion-label>
+        </ion-item>
+        <div class="ion-padding" slot="content">
+          <ion-list>
+            <ion-item
+              ><b>Description: </b> A flavorful Vietnamese noodle soup with beef
+              and aromatic spices.</ion-item
+            >
+            <ion-item><b>Calories:</b> 350 kcal</ion-item>
+            <ion-item>500g beef brisket</ion-item>
+            <ion-item>200g rice noodles</ion-item>
+            <ion-item>2L beef broth</ion-item>
+            <ion-item>1 onion, sliced</ion-item>
             <ion-item>3 cloves garlic, minced</ion-item>
-            <ion-item>1 thumb-sized ginger, grated</ion-item>
-            <ion-item>2 tablespoons curry powder</ion-item>
-            <ion-item>1 teaspoon ground cumin</ion-item>
-            <ion-item>1 teaspoon ground coriander</ion-item>
-            <ion-item>1/2 teaspoon turmeric powder</ion-item>
-            <ion-item>1/2 teaspoon chili powder (adjust to taste)</ion-item>
-            <ion-item>1 can (400ml) coconut milk</ion-item>
-            <ion-item>2 large potatoes, peeled and diced</ion-item>
-            <ion-item>Salt and pepper to taste</ion-item>
+            <ion-item>1-inch ginger, grated</ion-item>
+            <ion-item>2 star anise</ion-item>
+            <ion-item>1 cinnamon stick</ion-item>
+            <ion-item>2 tbsp fish sauce</ion-item>
+            <ion-item>1 tbsp sugar</ion-item>
+            <ion-item>1 bunch fresh cilantro</ion-item>
+            <ion-item><b>Instructions:</b></ion-item>
+            <ion-item
+              >1. In a pot, sauté onion, garlic, and ginger until
+              fragrant.</ion-item
+            >
+            <ion-item
+              >2. Add beef brisket, star anise, and cinnamon stick. Brown the
+              beef.</ion-item
+            >
+            <ion-item
+              >3. Pour in beef broth and bring to a boil. Simmer for 1-2 hours
+              until beef is tender.</ion-item
+            >
+            <ion-item
+              >4. Cook rice noodles according to package instructions.</ion-item
+            >
+            <ion-item>5. Season broth with fish sauce and sugar.</ion-item>
+            <ion-item
+              >6. Place cooked rice noodles in serving bowls, top with beef
+              slices, and ladle hot broth over.</ion-item
+            >
+            <ion-item>7. Garnish with fresh cilantro before serving.</ion-item>
+          </ion-list>
+        </div>
+      </ion-accordion>
+
+      <!-- Ninth Accordion -->
+      <ion-accordion value="ninth" style="margin-bottom: 10px">
+        <ion-item slot="header" color="light">
+          <ion-label>Indonesian Rendang</ion-label>
+        </ion-item>
+        <div class="ion-padding" slot="content">
+          <ion-list>
+            <ion-item
+              ><b>Description: </b> A rich and spicy Indonesian beef stew
+              simmered in coconut milk and spices.</ion-item
+            >
+            <ion-item><b>Calories:</b> 480 kcal</ion-item>
+            <ion-item>500g beef chuck, cut into cubes</ion-item>
+            <ion-item>400ml coconut milk</ion-item>
+            <ion-item>5 shallots, sliced</ion-item>
+            <ion-item>4 cloves garlic, minced</ion-item>
+            <ion-item>2 stalks lemongrass, bruised</ion-item>
+            <ion-item>5 kaffir lime leaves</ion-item>
+            <ion-item>2 tbsp tamarind paste</ion-item>
+            <ion-item>1 tbsp vegetable oil</ion-item>
+            <ion-item><b>Instructions:</b></ion-item>
+            <ion-item
+              >1. In a pan, heat vegetable oil and sauté shallots and garlic
+              until fragrant.</ion-item
+            >
+            <ion-item
+              >2. Add beef cubes and brown them. Add lemongrass and kaffir lime
+              leaves.</ion-item
+            >
+            <ion-item
+              >3. Pour in coconut milk and tamarind paste. Simmer until beef is
+              tender and sauce thickens.</ion-item
+            >
+            <ion-item>4. Serve hot with steamed rice.</ion-item>
+          </ion-list>
+        </div>
+      </ion-accordion>
+
+      <!-- Tenth Accordion -->
+      <ion-accordion value="tenth" style="margin-bottom: 10px">
+        <ion-item slot="header" color="light">
+          <ion-label>Thai Massaman Curry</ion-label>
+        </ion-item>
+        <div class="ion-padding" slot="content">
+          <ion-list>
+            <ion-item
+              ><b>Description: </b> A mild and aromatic Thai curry made with
+              chicken, potatoes, and peanuts.</ion-item
+            >
+            <ion-item><b>Calories:</b> 410 kcal</ion-item>
+            <ion-item>500g chicken thighs, boneless and skinless</ion-item>
+            <ion-item>2 potatoes, diced</ion-item>
+            <ion-item>400ml coconut milk</ion-item>
+            <ion-item>3 tbsp Massaman curry paste</ion-item>
+            <ion-item>1 onion, sliced</ion-item>
+            <ion-item>1/2 cup roasted peanuts</ion-item>
+            <ion-item>2 tbsp fish sauce</ion-item>
+            <ion-item>1 tbsp tamarind paste</ion-item>
+            <ion-item>1 tbsp sugar</ion-item>
+            <ion-item>1 tbsp vegetable oil</ion-item>
+            <ion-item><b>Instructions:</b></ion-item>
+            <ion-item
+              >1. In a pan, heat vegetable oil and fry Massaman curry paste
+              until fragrant.</ion-item
+            >
+            <ion-item
+              >2. Add chicken thighs and brown them. Add onions and cook until
+              translucent.</ion-item
+            >
+            <ion-item
+              >3. Pour in coconut milk, fish sauce, tamarind paste, and sugar.
+              Simmer until chicken is cooked through.</ion-item
+            >
+            <ion-item
+              >4. Add diced potatoes and roasted peanuts. Continue to simmer
+              until potatoes are tender.</ion-item
+            >
+            <ion-item>5. Serve hot with steamed rice.</ion-item>
           </ion-list>
         </div>
       </ion-accordion>
