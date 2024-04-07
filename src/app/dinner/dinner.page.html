@@ -1,6 +1,6 @@
 <ion-header [translucent]="true">
   <ion-toolbar color="light">
-    <ion-title> What do you want to cook today? </ion-title>
+    <ion-title style="text-align: center"> Dinner </ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -19,33 +19,55 @@
       flex-direction: column;
       align-items: center;
       height: 100vh;
-      margin-top: 10px; /* Adjust this value to bring it closer */
-      position: relative; /* Add relative positioning */
-      z-index: 2; /* Increase z-index */
+      margin-top: 40px;
+      position: relative;
+      z-index: 2;
     "
   >
-    <!-- Insert the ion-searchbar within the same div -->
-    <ion-searchbar
-      placeholder="Search Recipes"
-      style="width: 90%; margin-bottom: 20px"
-      color="light"
-    ></ion-searchbar>
-
     <ion-accordion-group style="width: 90%; z-index: 1">
       <!-- First Accordion -->
       <ion-accordion value="first" style="margin-bottom: 10px">
         <ion-item slot="header" color="light">
-          <ion-label>Spaghetti</ion-label>
+          <ion-label>Chicken Katsu Curry</ion-label>
         </ion-item>
         <div class="ion-padding" slot="content">
           <ion-list>
-            <ion-item>225g spaghetti</ion-item>
-            <ion-item>1 tbsp olive oil</ion-item>
-            <ion-item>3 cloves garlic</ion-item>
-            <ion-item>1 can (14 oz) crushed tomatoes</ion-item>
             <ion-item
-              >Dried oregano, basil, salt, pepper to taste, Parmesan cheese
-              (Optional)</ion-item
+              ><b>Description: </b> Crispy breaded chicken served with a rich
+              Japanese curry sauce.</ion-item
+            >
+            <ion-item><b>Calories:</b> 450 kcal</ion-item>
+            <ion-item>2 boneless chicken breasts</ion-item>
+            <ion-item>1 cup panko breadcrumbs</ion-item>
+            <ion-item>1 egg, beaten</ion-item>
+            <ion-item>2 cups cooked white rice</ion-item>
+            <ion-item>1 onion, sliced</ion-item>
+            <ion-item>2 carrots, chopped</ion-item>
+            <ion-item>2 potatoes, diced</ion-item>
+            <ion-item>3 cups chicken broth</ion-item>
+            <ion-item>2 tbsp vegetable oil</ion-item>
+            <ion-item><b>Instructions:</b></ion-item>
+            <ion-item
+              >1. Season the chicken breasts with salt and pepper. Dip each
+              chicken breast in the beaten egg, then coat with panko
+              breadcrumbs.</ion-item
+            >
+            <ion-item
+              >2. Heat vegetable oil in a pan over medium-high heat. Fry the
+              chicken until golden brown and crispy, about 5-7 minutes per side.
+              Remove and set aside.</ion-item
+            >
+            <ion-item
+              >3. In the same pan, add more oil if needed and sauté the onion,
+              carrots, and potatoes until softened.</ion-item
+            >
+            <ion-item
+              >4. Add the chicken broth and bring to a boil. Reduce heat and
+              simmer until vegetables are tender.</ion-item
+            >
+            <ion-item
+              >5. Slice the fried chicken and serve with the vegetable curry
+              over cooked white rice.</ion-item
             >
           </ion-list>
         </div>
@@ -54,23 +76,46 @@
       <!-- Second Accordion -->
       <ion-accordion value="second" style="margin-bottom: 10px">
         <ion-item slot="header" color="light">
-          <ion-label>Shepherd's Pie</ion-label>
+          <ion-label>Chicken Tikka Masala</ion-label>
         </ion-item>
         <div class="ion-padding" slot="content">
           <ion-list>
-            <ion-item><b>Filling:</b></ion-item>
-            <ion-item>500g ground lamb or beef</ion-item>
-            <ion-item>Onion, Carrots, Garlic (diced)</ion-item>
-            <ion-item>Frozen peas</ion-item>
-            <ion-item>2 tbsp tomato paste</ion-item>
-            <ion-item>1 cup broth</ion-item>
-            <ion-item>2 tsp Worcestershire sauce, 1 tsp dried thyme</ion-item>
-            <ion-item>Salt and pepper</ion-item>
-
-            <ion-item><b>Mashed Potatoes:</b></ion-item>
-            <ion-item>4 large potatoes</ion-item>
-            <ion-item>1/2 cup milk, 2 tbsp butter</ion-item>
-            <ion-item>Salt and pepper</ion-item>
+            <ion-item
+              ><b>Description: </b> Tender chicken marinated in yogurt and
+              spices, grilled and served in a creamy tomato sauce.</ion-item
+            >
+            <ion-item><b>Calories:</b> 480 kcal</ion-item>
+            <ion-item>2 boneless chicken breasts, cut into cubes</ion-item>
+            <ion-item>1 cup plain yogurt</ion-item>
+            <ion-item>3 tbsp tikka masala spice mix</ion-item>
+            <ion-item>1 onion, finely chopped</ion-item>
+            <ion-item>2 cloves garlic, minced</ion-item>
+            <ion-item>1 can (14 oz) crushed tomatoes</ion-item>
+            <ion-item>1 cup heavy cream</ion-item>
+            <ion-item>2 tbsp vegetable oil</ion-item>
+            <ion-item><b>Instructions:</b></ion-item>
+            <ion-item
+              >1. In a bowl, combine yogurt and tikka masala spice mix. Add
+              chicken cubes and marinate for at least 2 hours or overnight in
+              the refrigerator.</ion-item
+            >
+            <ion-item
+              >2. Heat vegetable oil in a pan over medium heat. Sauté onion and
+              garlic until translucent.</ion-item
+            >
+            <ion-item
+              >3. Add the marinated chicken to the pan and cook until browned on
+              all sides.</ion-item
+            >
+            <ion-item
+              >4. Stir in the crushed tomatoes and simmer for 15-20
+              minutes.</ion-item
+            >
+            <ion-item
+              >5. Stir in the heavy cream and cook for an additional 5 minutes
+              until heated through.</ion-item
+            >
+            <ion-item>6. Serve hot with naan bread or rice.</ion-item>
           </ion-list>
         </div>
       </ion-accordion>
@@ -78,19 +123,43 @@
       <!-- Third Accordion -->
       <ion-accordion value="third" style="margin-bottom: 10px">
         <ion-item slot="header" color="light">
-          <ion-label>Buttermilk Chicken</ion-label>
+          <ion-label>Beef Shawarma Wraps</ion-label>
         </ion-item>
         <div class="ion-padding" slot="content">
           <ion-list>
-            <ion-item>4 boneless, skinless chicken breasts</ion-item>
-            <ion-item>1 cup buttermilk</ion-item>
-            <ion-item>1 cup all-purpose flour</ion-item>
-            <ion-item>1 teaspoon garlic powder</ion-item>
-            <ion-item>1 teaspoon onion powder</ion-item>
-            <ion-item>1 teaspoon paprika</ion-item>
-            <ion-item>1/2 teaspoon cayenne pepper</ion-item>
-            <ion-item>Salt and pepper to taste</ion-item>
-            <ion-item>Vegetable oil for frying</ion-item>
+            <ion-item
+              ><b>Description: </b> Thinly sliced marinated beef, wrapped in
+              pita bread with fresh veggies and tahini sauce.</ion-item
+            >
+            <ion-item><b>Calories:</b> 520 kcal</ion-item>
+            <ion-item>1 lb beef sirloin, thinly sliced</ion-item>
+            <ion-item>4 pita breads</ion-item>
+            <ion-item>1 cup plain yogurt</ion-item>
+            <ion-item>2 cloves garlic, minced</ion-item>
+            <ion-item>1 lemon, juiced</ion-item>
+            <ion-item>1 tsp cumin</ion-item>
+            <ion-item>1 tsp paprika</ion-item>
+            <ion-item>1 cucumber, thinly sliced</ion-item>
+            <ion-item>1 tomato, diced</ion-item>
+            <ion-item>1/2 cup tahini sauce</ion-item>
+            <ion-item><b>Instructions:</b></ion-item>
+            <ion-item
+              >1. In a bowl, combine yogurt, minced garlic, lemon juice, cumin,
+              and paprika. Add beef slices and marinate for at least 1
+              hour.</ion-item
+            >
+            <ion-item
+              >2. Heat a skillet over medium-high heat. Cook the marinated beef
+              slices until browned and cooked through.</ion-item
+            >
+            <ion-item
+              >3. Warm the pita breads in the oven or microwave.</ion-item
+            >
+            <ion-item
+              >4. Spread tahini sauce on each pita bread. Add cooked beef
+              slices, cucumber slices, and diced tomatoes.</ion-item
+            >
+            <ion-item>5. Roll up the pita breads tightly and serve.</ion-item>
           </ion-list>
         </div>
       </ion-accordion>
@@ -98,19 +167,49 @@
       <!-- Fourth Accordion -->
       <ion-accordion value="fourth" style="margin-bottom: 10px">
         <ion-item slot="header" color="light">
-          <ion-label>Fried Chicken</ion-label>
+          <ion-label>Chicken Fajitas</ion-label>
         </ion-item>
         <div class="ion-padding" slot="content">
           <ion-list>
-            <ion-item>4 pieces of chicken (legs, thighs, or breasts)</ion-item>
-            <ion-item>1 cup all-purpose flour</ion-item>
-            <ion-item>1 teaspoon garlic powder</ion-item>
-            <ion-item>1 teaspoon onion powder</ion-item>
-            <ion-item>1/2 teaspoon paprika</ion-item>
-            <ion-item>1/2 teaspoon dried thyme</ion-item>
-            <ion-item>1/2 teaspoon dried oregano</ion-item>
-            <ion-item>Salt and pepper to taste</ion-item>
-            <ion-item>Vegetable oil for frying</ion-item>
+            <ion-item
+              ><b>Description: </b> Grilled chicken strips, bell peppers, and
+              onions, served with tortillas, salsa, and sour cream.</ion-item
+            >
+            <ion-item><b>Calories:</b> 420 kcal</ion-item>
+            <ion-item>2 boneless chicken breasts, sliced</ion-item>
+            <ion-item>2 bell peppers, sliced</ion-item>
+            <ion-item>1 onion, sliced</ion-item>
+            <ion-item>2 tbsp olive oil</ion-item>
+            <ion-item>1 tbsp chili powder</ion-item>
+            <ion-item>1 tsp cumin</ion-item>
+            <ion-item>1/2 tsp garlic powder</ion-item>
+            <ion-item>1/2 tsp onion powder</ion-item>
+            <ion-item>4 flour tortillas</ion-item>
+            <ion-item>1 cup salsa</ion-item>
+            <ion-item>1/2 cup sour cream</ion-item>
+            <ion-item><b>Instructions:</b></ion-item>
+            <ion-item
+              >1. In a bowl, combine olive oil, chili powder, cumin, garlic
+              powder, and onion powder. Add chicken slices and marinate for 30
+              minutes.</ion-item
+            >
+            <ion-item
+              >2. Heat a skillet over medium-high heat. Cook the marinated
+              chicken slices until browned and cooked through. Remove and set
+              aside.</ion-item
+            >
+            <ion-item
+              >3. In the same skillet, add more olive oil if needed and sauté
+              bell peppers and onions until tender.</ion-item
+            >
+            <ion-item
+              >4. Return the cooked chicken to the skillet and toss to combine
+              with the bell peppers and onions.</ion-item
+            >
+            <ion-item
+              >5. Serve the chicken fajita mixture with warm flour tortillas,
+              salsa, and sour cream.</ion-item
+            >
           </ion-list>
         </div>
       </ion-accordion>
@@ -118,22 +217,276 @@
       <!-- Fifth Accordion -->
       <ion-accordion value="fifth" style="margin-bottom: 10px">
         <ion-item slot="header" color="light">
-          <ion-label>Beef Curry</ion-label>
+          <ion-label>Mediterranean Grilled Lamb Chops</ion-label>
         </ion-item>
         <div class="ion-padding" slot="content">
           <ion-list>
-            <ion-item>500g beef, cut into cubes</ion-item>
-            <ion-item>1 large onion, finely chopped</ion-item>
+            <ion-item
+              ><b>Description: </b> Tender lamb chops marinated in olive oil,
+              garlic, and herbs, grilled to perfection.</ion-item
+            >
+            <ion-item><b>Calories:</b> 480 kcal</ion-item>
+            <ion-item>4 lamb chops</ion-item>
+            <ion-item>1/4 cup olive oil</ion-item>
             <ion-item>3 cloves garlic, minced</ion-item>
-            <ion-item>1 thumb-sized ginger, grated</ion-item>
-            <ion-item>2 tablespoons curry powder</ion-item>
-            <ion-item>1 teaspoon ground cumin</ion-item>
-            <ion-item>1 teaspoon ground coriander</ion-item>
-            <ion-item>1/2 teaspoon turmeric powder</ion-item>
-            <ion-item>1/2 teaspoon chili powder (adjust to taste)</ion-item>
-            <ion-item>1 can (400ml) coconut milk</ion-item>
-            <ion-item>2 large potatoes, peeled and diced</ion-item>
-            <ion-item>Salt and pepper to taste</ion-item>
+            <ion-item>1 tsp rosemary</ion-item>
+            <ion-item>1 tsp thyme</ion-item>
+            <ion-item>1 tsp oregano</ion-item>
+            <ion-item>Salt and pepper, to taste</ion-item>
+            <ion-item><b>Instructions:</b></ion-item>
+            <ion-item
+              >1. In a bowl, combine olive oil, minced garlic, rosemary, thyme,
+              oregano, salt, and pepper. Add lamb chops and marinate for at
+              least 1 hour.</ion-item
+            >
+            <ion-item
+              >2. Preheat grill to medium-high heat. Grill the lamb chops for
+              4-5 minutes per side for medium-rare or to desired
+              doneness.</ion-item
+            >
+            <ion-item
+              >3. Remove lamb chops from the grill and let rest for a few
+              minutes before serving.</ion-item
+            >
+            <ion-item>4. Serve hot with your favorite side dishes.</ion-item>
+          </ion-list>
+        </div>
+      </ion-accordion>
+
+      <!-- Sixth Accordion -->
+      <ion-accordion value="sixth" style="margin-bottom: 10px">
+        <ion-item slot="header" color="light">
+          <ion-label>Beef Bulgogi</ion-label>
+        </ion-item>
+        <div class="ion-padding" slot="content">
+          <ion-list>
+            <ion-item
+              ><b>Description: </b> Thinly sliced beef marinated in a sweet and
+              savory sauce, grilled to perfection.</ion-item
+            >
+            <ion-item><b>Calories:</b> 500 kcal</ion-item>
+            <ion-item>1 lb beef sirloin, thinly sliced</ion-item>
+            <ion-item>1/4 cup soy sauce</ion-item>
+            <ion-item>2 tbsp brown sugar</ion-item>
+            <ion-item>2 tbsp sesame oil</ion-item>
+            <ion-item>3 cloves garlic, minced</ion-item>
+            <ion-item>1 tsp ginger, minced</ion-item>
+            <ion-item>2 green onions, thinly sliced</ion-item>
+            <ion-item><b>Instructions:</b></ion-item>
+            <ion-item
+              >1. In a bowl, combine soy sauce, brown sugar, sesame oil, minced
+              garlic, and minced ginger.</ion-item
+            >
+            <ion-item
+              >2. Add the thinly sliced beef to the marinade and let it marinate
+              for at least 1 hour.</ion-item
+            >
+            <ion-item
+              >3. Heat a grill or grill pan over medium-high heat. Grill the
+              marinated beef slices for 2-3 minutes per side or until cooked
+              through.</ion-item
+            >
+            <ion-item
+              >4. Garnish with thinly sliced green onions and serve hot with
+              steamed rice.</ion-item
+            >
+          </ion-list>
+        </div>
+      </ion-accordion>
+
+      <!-- Seventh Accordion -->
+      <ion-accordion value="seventh" style="margin-bottom: 10px">
+        <ion-item slot="header" color="light">
+          <ion-label>Thai Green Curry with Chicken</ion-label>
+        </ion-item>
+        <div class="ion-padding" slot="content">
+          <ion-list>
+            <ion-item
+              ><b>Description: </b> Creamy and aromatic Thai green curry with
+              tender chicken, bamboo shoots, and bell peppers.</ion-item
+            >
+            <ion-item><b>Calories:</b> 480 kcal</ion-item>
+            <ion-item>2 boneless chicken breasts, cut into cubes</ion-item>
+            <ion-item>1 can (14 oz) coconut milk</ion-item>
+            <ion-item>2 tbsp green curry paste</ion-item>
+            <ion-item>1 red bell pepper, sliced</ion-item>
+            <ion-item>1/2 cup bamboo shoots</ion-item>
+            <ion-item>2 tbsp fish sauce</ion-item>
+            <ion-item>1 tbsp brown sugar</ion-item>
+            <ion-item>1/4 cup fresh basil leaves</ion-item>
+            <ion-item><b>Instructions:</b></ion-item>
+            <ion-item
+              >1. In a pan, heat half of the coconut milk over medium heat. Add
+              green curry paste and stir until fragrant.</ion-item
+            >
+            <ion-item
+              >2. Add chicken cubes to the pan and cook until they are no longer
+              pink.</ion-item
+            >
+            <ion-item
+              >3. Add the remaining coconut milk, sliced red bell pepper, bamboo
+              shoots, fish sauce, and brown sugar. Stir well and let it simmer
+              for 10-15 minutes.</ion-item
+            >
+            <ion-item
+              >4. Remove from heat and stir in fresh basil leaves.</ion-item
+            >
+            <ion-item>5. Serve hot with steamed rice.</ion-item>
+          </ion-list>
+        </div>
+      </ion-accordion>
+
+      <!-- Eighth Accordion -->
+      <ion-accordion value="eighth" style="margin-bottom: 10px">
+        <ion-item slot="header" color="light">
+          <ion-label>Chicken Shawarma Platter</ion-label>
+        </ion-item>
+        <div class="ion-padding" slot="content">
+          <ion-list>
+            <ion-item
+              ><b>Description: </b> Grilled marinated chicken served with garlic
+              sauce, pita bread, and a variety of toppings.</ion-item
+            >
+            <ion-item><b>Calories:</b> 550 kcal</ion-item>
+            <ion-item>2 boneless chicken breasts</ion-item>
+            <ion-item>1/4 cup olive oil</ion-item>
+            <ion-item>3 cloves garlic, minced</ion-item>
+            <ion-item>1 tsp cumin</ion-item>
+            <ion-item>1 tsp paprika</ion-item>
+            <ion-item>1/2 tsp turmeric</ion-item>
+            <ion-item>1/4 cup yogurt</ion-item>
+            <ion-item>4 pita breads</ion-item>
+            <ion-item>1 cup garlic sauce</ion-item>
+            <ion-item>1 cucumber, sliced</ion-item>
+            <ion-item>1 tomato, sliced</ion-item>
+            <ion-item>1/2 cup pickled turnips</ion-item>
+            <ion-item><b>Instructions:</b></ion-item>
+            <ion-item
+              >1. In a bowl, combine olive oil, minced garlic, cumin, paprika,
+              turmeric, and yogurt to make the marinade.</ion-item
+            >
+            <ion-item
+              >2. Add chicken breasts to the marinade and let it marinate for at
+              least 2 hours.</ion-item
+            >
+            <ion-item
+              >3. Preheat grill to medium-high heat. Grill the marinated chicken
+              breasts until they are fully cooked.</ion-item
+            >
+            <ion-item>4. Slice the grilled chicken into strips.</ion-item>
+            <ion-item
+              >5. Warm the pita breads and spread garlic sauce on each
+              pita.</ion-item
+            >
+            <ion-item
+              >6. Place grilled chicken strips, cucumber slices, tomato slices,
+              and pickled turnips on the pita breads.</ion-item
+            >
+            <ion-item>7. Roll up the pita breads tightly and serve.</ion-item>
+          </ion-list>
+        </div>
+      </ion-accordion>
+
+      <!-- Ninth Accordion -->
+      <ion-accordion value="ninth" style="margin-bottom: 10px">
+        <ion-item slot="header" color="light">
+          <ion-label>Fish Tacos</ion-label>
+        </ion-item>
+        <div class="ion-padding" slot="content">
+          <ion-list>
+            <ion-item
+              ><b>Description: </b> Crispy fish fillets served in warm tortillas
+              with cabbage slaw and a creamy sauce.</ion-item
+            >
+            <ion-item><b>Calories:</b> 420 kcal</ion-item>
+            <ion-item>4 fish fillets (such as tilapia or cod)</ion-item>
+            <ion-item>1 cup all-purpose flour</ion-item>
+            <ion-item>1 tsp salt</ion-item>
+            <ion-item>1/2 tsp black pepper</ion-item>
+            <ion-item>1/2 tsp paprika</ion-item>
+            <ion-item>1/2 cup milk</ion-item>
+            <ion-item>1 egg</ion-item>
+            <ion-item>1 cup shredded cabbage</ion-item>
+            <ion-item>1/4 cup mayonnaise</ion-item>
+            <ion-item>1 tbsp lime juice</ion-item>
+            <ion-item>1 tsp hot sauce (optional)</ion-item>
+            <ion-item>4 flour tortillas</ion-item>
+            <ion-item><b>Instructions:</b></ion-item>
+            <ion-item
+              >1. In a shallow dish, mix together flour, salt, pepper, and
+              paprika.</ion-item
+            >
+            <ion-item
+              >2. In another dish, whisk together milk and egg.</ion-item
+            >
+            <ion-item
+              >3. Dip each fish fillet into the milk mixture, then dredge in the
+              flour mixture, coating both sides.</ion-item
+            >
+            <ion-item
+              >4. Heat oil in a skillet over medium-high heat. Fry the fish
+              fillets for 3-4 minutes on each side or until golden and
+              crispy.</ion-item
+            >
+            <ion-item
+              >5. In a bowl, combine shredded cabbage, mayonnaise, lime juice,
+              and hot sauce to make the slaw.</ion-item
+            >
+            <ion-item
+              >6. Warm the flour tortillas. Place a fried fish fillet on each
+              tortilla and top with cabbage slaw.</ion-item
+            >
+            <ion-item
+              >7. Serve hot with additional lime wedges and hot sauce if
+              desired.</ion-item
+            >
+          </ion-list>
+        </div>
+      </ion-accordion>
+
+      <!-- Tenth Accordion -->
+      <ion-accordion value="tenth" style="margin-bottom: 10px">
+        <ion-item slot="header" color="light">
+          <ion-label>Lentil Soup (Shorbat Adas)</ion-label>
+        </ion-item>
+        <div class="ion-padding" slot="content">
+          <ion-list>
+            <ion-item
+              ><b>Description: </b> A hearty and nutritious soup made with
+              lentils, vegetables, and Middle Eastern spices.</ion-item
+            >
+            <ion-item><b>Calories:</b> 350 kcal</ion-item>
+            <ion-item>1 cup brown lentils, rinsed</ion-item>
+            <ion-item>1 onion, chopped</ion-item>
+            <ion-item>2 carrots, chopped</ion-item>
+            <ion-item>2 celery stalks, chopped</ion-item>
+            <ion-item>2 cloves garlic, minced</ion-item>
+            <ion-item>6 cups vegetable broth</ion-item>
+            <ion-item>1 tsp ground cumin</ion-item>
+            <ion-item>1/2 tsp ground turmeric</ion-item>
+            <ion-item>1/4 tsp ground cinnamon</ion-item>
+            <ion-item>Salt and pepper, to taste</ion-item>
+            <ion-item>2 tbsp olive oil</ion-item>
+            <ion-item>1/4 cup fresh parsley, chopped</ion-item>
+            <ion-item><b>Instructions:</b></ion-item>
+            <ion-item
+              >1. In a large pot, heat olive oil over medium heat. Add chopped
+              onion, carrots, and celery. Cook until vegetables are
+              softened.</ion-item
+            >
+            <ion-item
+              >2. Add minced garlic, ground cumin, ground turmeric, and ground
+              cinnamon. Stir and cook for another minute.</ion-item
+            >
+            <ion-item
+              >3. Add rinsed lentils and vegetable broth to the pot. Bring to a
+              boil, then reduce heat and let simmer for about 30-40 minutes or
+              until lentils are tender.</ion-item
+            >
+            <ion-item>4. Season with salt and pepper to taste.</ion-item>
+            <ion-item
+              >5. Serve hot, garnished with fresh chopped parsley.</ion-item
+            >
           </ion-list>
         </div>
       </ion-accordion>
