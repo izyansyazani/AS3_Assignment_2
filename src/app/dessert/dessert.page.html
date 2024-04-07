@@ -1,6 +1,6 @@
 <ion-header [translucent]="true">
   <ion-toolbar color="light">
-    <ion-title> What do you want to cook today? </ion-title>
+    <ion-title style="text-align: center"> Dessert </ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -19,33 +19,48 @@
       flex-direction: column;
       align-items: center;
       height: 100vh;
-      margin-top: 10px; /* Adjust this value to bring it closer */
-      position: relative; /* Add relative positioning */
-      z-index: 2; /* Increase z-index */
+      margin-top: 40px;
+      position: relative;
+      z-index: 2;
     "
   >
-    <!-- Insert the ion-searchbar within the same div -->
-    <ion-searchbar
-      placeholder="Search Recipes"
-      style="width: 90%; margin-bottom: 20px"
-      color="light"
-    ></ion-searchbar>
-
     <ion-accordion-group style="width: 90%; z-index: 1">
       <!-- First Accordion -->
       <ion-accordion value="first" style="margin-bottom: 10px">
         <ion-item slot="header" color="light">
-          <ion-label>Spaghetti</ion-label>
+          <ion-label>Rice Pudding (Kheer)</ion-label>
         </ion-item>
         <div class="ion-padding" slot="content">
           <ion-list>
-            <ion-item>225g spaghetti</ion-item>
-            <ion-item>1 tbsp olive oil</ion-item>
-            <ion-item>3 cloves garlic</ion-item>
-            <ion-item>1 can (14 oz) crushed tomatoes</ion-item>
             <ion-item
-              >Dried oregano, basil, salt, pepper to taste, Parmesan cheese
-              (Optional)</ion-item
+              ><b>Description: </b> Creamy and aromatic rice pudding infused
+              with cardamom and garnished with almonds and raisins.</ion-item
+            >
+            <ion-item><b>Calories:</b> 350 kcal</ion-item>
+            <ion-item>1/2 cup basmati rice</ion-item>
+            <ion-item>4 cups whole milk</ion-item>
+            <ion-item>1/2 cup sugar</ion-item>
+            <ion-item>1/4 tsp cardamom powder</ion-item>
+            <ion-item>2 tbsp sliced almonds</ion-item>
+            <ion-item>2 tbsp raisins</ion-item>
+            <ion-item><b>Instructions:</b></ion-item>
+            <ion-item>1. Rinse the rice under cold water and drain.</ion-item>
+            <ion-item
+              >2. In a large saucepan, combine rice and milk and bring to a
+              boil.</ion-item
+            >
+            <ion-item
+              >3. Reduce heat and simmer, stirring occasionally, until the rice
+              is tender and the mixture is thickened (about 30-40
+              minutes).</ion-item
+            >
+            <ion-item
+              >4. Add sugar and cardamom powder and cook for another 5
+              minutes.</ion-item
+            >
+            <ion-item
+              >5. Remove from heat and let it cool. Garnish with almonds and
+              raisins before serving.</ion-item
             >
           </ion-list>
         </div>
@@ -54,23 +69,39 @@
       <!-- Second Accordion -->
       <ion-accordion value="second" style="margin-bottom: 10px">
         <ion-item slot="header" color="light">
-          <ion-label>Shepherd's Pie</ion-label>
+          <ion-label>Coconut Rice Balls (Klepon)</ion-label>
         </ion-item>
         <div class="ion-padding" slot="content">
           <ion-list>
-            <ion-item><b>Filling:</b></ion-item>
-            <ion-item>500g ground lamb or beef</ion-item>
-            <ion-item>Onion, Carrots, Garlic (diced)</ion-item>
-            <ion-item>Frozen peas</ion-item>
-            <ion-item>2 tbsp tomato paste</ion-item>
-            <ion-item>1 cup broth</ion-item>
-            <ion-item>2 tsp Worcestershire sauce, 1 tsp dried thyme</ion-item>
-            <ion-item>Salt and pepper</ion-item>
-
-            <ion-item><b>Mashed Potatoes:</b></ion-item>
-            <ion-item>4 large potatoes</ion-item>
-            <ion-item>1/2 cup milk, 2 tbsp butter</ion-item>
-            <ion-item>Salt and pepper</ion-item>
+            <ion-item
+              ><b>Description: </b> Chewy rice balls filled with palm sugar and
+              coated with grated coconut.</ion-item
+            >
+            <ion-item><b>Calories:</b> 300 kcal</ion-item>
+            <ion-item>1 cup glutinous rice flour</ion-item>
+            <ion-item>1/4 cup palm sugar, chopped</ion-item>
+            <ion-item>1/2 cup grated coconut</ion-item>
+            <ion-item>Green food coloring (optional)</ion-item>
+            <ion-item><b>Instructions:</b></ion-item>
+            <ion-item
+              >1. In a bowl, mix glutinous rice flour with a little water to
+              form a dough.</ion-item
+            >
+            <ion-item
+              >2. Divide the dough into small balls and flatten them.</ion-item
+            >
+            <ion-item
+              >3. Place a piece of palm sugar in the center of each flattened
+              dough and seal the edges to form balls.</ion-item
+            >
+            <ion-item
+              >4. Boil the balls in water until they float to the surface (about
+              3-5 minutes).</ion-item
+            >
+            <ion-item
+              >5. Roll the boiled balls in grated coconut. Add green food
+              coloring to the coconut for a vibrant look if desired.</ion-item
+            >
           </ion-list>
         </div>
       </ion-accordion>
@@ -78,19 +109,33 @@
       <!-- Third Accordion -->
       <ion-accordion value="third" style="margin-bottom: 10px">
         <ion-item slot="header" color="light">
-          <ion-label>Buttermilk Chicken</ion-label>
+          <ion-label>Mango Lassi</ion-label>
         </ion-item>
         <div class="ion-padding" slot="content">
           <ion-list>
-            <ion-item>4 boneless, skinless chicken breasts</ion-item>
-            <ion-item>1 cup buttermilk</ion-item>
-            <ion-item>1 cup all-purpose flour</ion-item>
-            <ion-item>1 teaspoon garlic powder</ion-item>
-            <ion-item>1 teaspoon onion powder</ion-item>
-            <ion-item>1 teaspoon paprika</ion-item>
-            <ion-item>1/2 teaspoon cayenne pepper</ion-item>
-            <ion-item>Salt and pepper to taste</ion-item>
-            <ion-item>Vegetable oil for frying</ion-item>
+            <ion-item
+              ><b>Description: </b> A refreshing yogurt-based drink blended with
+              ripe mangoes and flavored with cardamom.</ion-item
+            >
+            <ion-item><b>Calories:</b> 320 kcal</ion-item>
+            <ion-item>1 ripe mango, peeled and chopped</ion-item>
+            <ion-item>1 cup plain yogurt</ion-item>
+            <ion-item>1/2 cup milk</ion-item>
+            <ion-item
+              >2 tbsp sugar (adjust according to sweetness of mango)</ion-item
+            >
+            <ion-item>1/4 tsp cardamom powder</ion-item>
+            <ion-item>Ice cubes (optional)</ion-item>
+            <ion-item><b>Instructions:</b></ion-item>
+            <ion-item
+              >1. In a blender, combine chopped mango, yogurt, milk, sugar, and
+              cardamom powder.</ion-item
+            >
+            <ion-item>2. Blend until smooth and creamy.</ion-item>
+            <ion-item
+              >3. Add ice cubes if using and blend again until frothy.</ion-item
+            >
+            <ion-item>4. Pour into glasses and serve chilled.</ion-item>
           </ion-list>
         </div>
       </ion-accordion>
@@ -98,19 +143,31 @@
       <!-- Fourth Accordion -->
       <ion-accordion value="fourth" style="margin-bottom: 10px">
         <ion-item slot="header" color="light">
-          <ion-label>Fried Chicken</ion-label>
+          <ion-label>Chocolate Covered Dates</ion-label>
         </ion-item>
         <div class="ion-padding" slot="content">
           <ion-list>
-            <ion-item>4 pieces of chicken (legs, thighs, or breasts)</ion-item>
-            <ion-item>1 cup all-purpose flour</ion-item>
-            <ion-item>1 teaspoon garlic powder</ion-item>
-            <ion-item>1 teaspoon onion powder</ion-item>
-            <ion-item>1/2 teaspoon paprika</ion-item>
-            <ion-item>1/2 teaspoon dried thyme</ion-item>
-            <ion-item>1/2 teaspoon dried oregano</ion-item>
-            <ion-item>Salt and pepper to taste</ion-item>
-            <ion-item>Vegetable oil for frying</ion-item>
+            <ion-item
+              ><b>Description: </b> Medjool dates stuffed with almonds and
+              dipped in melted chocolate.</ion-item
+            >
+            <ion-item><b>Calories:</b> 400 kcal</ion-item>
+            <ion-item>12 Medjool dates, pitted</ion-item>
+            <ion-item>12 whole almonds</ion-item>
+            <ion-item>100g dark chocolate, melted</ion-item>
+            <ion-item><b>Instructions:</b></ion-item>
+            <ion-item
+              >1. Insert one almond into each date where the pit was
+              removed.</ion-item
+            >
+            <ion-item
+              >2. Dip each stuffed date into melted chocolate to coat.</ion-item
+            >
+            <ion-item
+              >3. Place the chocolate-covered dates on a parchment-lined tray
+              and refrigerate until set.</ion-item
+            >
+            <ion-item>4. Once set, serve and enjoy!</ion-item>
           </ion-list>
         </div>
       </ion-accordion>
@@ -118,22 +175,292 @@
       <!-- Fifth Accordion -->
       <ion-accordion value="fifth" style="margin-bottom: 10px">
         <ion-item slot="header" color="light">
-          <ion-label>Beef Curry</ion-label>
+          <ion-label>Semolina Cake (Basbousa)</ion-label>
         </ion-item>
         <div class="ion-padding" slot="content">
           <ion-list>
-            <ion-item>500g beef, cut into cubes</ion-item>
-            <ion-item>1 large onion, finely chopped</ion-item>
-            <ion-item>3 cloves garlic, minced</ion-item>
-            <ion-item>1 thumb-sized ginger, grated</ion-item>
-            <ion-item>2 tablespoons curry powder</ion-item>
-            <ion-item>1 teaspoon ground cumin</ion-item>
-            <ion-item>1 teaspoon ground coriander</ion-item>
-            <ion-item>1/2 teaspoon turmeric powder</ion-item>
-            <ion-item>1/2 teaspoon chili powder (adjust to taste)</ion-item>
-            <ion-item>1 can (400ml) coconut milk</ion-item>
-            <ion-item>2 large potatoes, peeled and diced</ion-item>
-            <ion-item>Salt and pepper to taste</ion-item>
+            <ion-item
+              ><b>Description: </b> A sweet and moist cake made from semolina,
+              coconut, and flavored with rosewater.</ion-item
+            >
+            <ion-item><b>Calories:</b> 450 kcal</ion-item>
+            <ion-item>1 cup semolina</ion-item>
+            <ion-item>1/2 cup desiccated coconut</ion-item>
+            <ion-item>1/2 cup sugar</ion-item>
+            <ion-item>1/2 cup plain yogurt</ion-item>
+            <ion-item>1/4 cup melted butter</ion-item>
+            <ion-item>1/4 cup milk</ion-item>
+            <ion-item>1 tsp baking powder</ion-item>
+            <ion-item
+              >1/4 cup slivered almonds or pistachios for garnish</ion-item
+            >
+            <ion-item>1 tbsp rosewater</ion-item>
+            <ion-item><b>Instructions:</b></ion-item>
+            <ion-item
+              >1. Preheat oven to 180°C (350°F). Grease a baking dish.</ion-item
+            >
+            <ion-item
+              >2. In a bowl, mix together semolina, desiccated coconut, sugar,
+              yogurt, melted butter, milk, baking powder, and rosewater to form
+              a batter.</ion-item
+            >
+            <ion-item
+              >3. Pour the batter into the prepared baking dish and smooth the
+              top.</ion-item
+            >
+            <ion-item
+              >4. Sprinkle slivered almonds or pistachios on top.</ion-item
+            >
+            <ion-item
+              >5. Bake for 25-30 minutes or until golden brown and a skewer
+              inserted comes out clean.</ion-item
+            >
+            <ion-item
+              >6. Allow to cool slightly before cutting into squares or
+              diamonds.</ion-item
+            >
+          </ion-list>
+        </div>
+      </ion-accordion>
+
+      <!-- Sixth Accordion -->
+      <ion-accordion value="sixth" style="margin-bottom: 10px">
+        <ion-item slot="header" color="light">
+          <ion-label>Turkish Delight (Lokum)</ion-label>
+        </ion-item>
+        <div class="ion-padding" slot="content">
+          <ion-list>
+            <ion-item
+              ><b>Description: </b> Gooey and fragrant Turkish delight made with
+              sugar, cornstarch, and flavored with rosewater or lemon.</ion-item
+            >
+            <ion-item><b>Calories:</b> 280 kcal</ion-item>
+            <ion-item>2 cups granulated sugar</ion-item>
+            <ion-item>1 cup water</ion-item>
+            <ion-item>1 cup cornstarch</ion-item>
+            <ion-item>1 tbsp lemon juice</ion-item>
+            <ion-item>2 tbsp rosewater or orange blossom water</ion-item>
+            <ion-item>Powdered sugar for dusting</ion-item>
+            <ion-item><b>Instructions:</b></ion-item>
+            <ion-item
+              >1. Grease a square baking dish and line it with parchment
+              paper.</ion-item
+            >
+            <ion-item
+              >2. In a saucepan, combine sugar and water. Bring to a boil and
+              simmer until the sugar is completely dissolved.</ion-item
+            >
+            <ion-item
+              >3. In a separate bowl, mix cornstarch with 1 cup of cold water to
+              form a smooth paste.</ion-item
+            >
+            <ion-item
+              >4. Gradually add the cornstarch mixture to the sugar syrup while
+              stirring continuously.</ion-item
+            >
+            <ion-item
+              >5. Cook the mixture over low heat, stirring constantly until it
+              thickens and becomes translucent (about 10-15 minutes).</ion-item
+            >
+            <ion-item
+              >6. Add lemon juice and rosewater or orange blossom water. Mix
+              well.</ion-item
+            >
+            <ion-item
+              >7. Pour the mixture into the prepared baking dish and spread
+              evenly.</ion-item
+            >
+            <ion-item
+              >8. Allow to cool and set for at least 4 hours or
+              overnight.</ion-item
+            >
+            <ion-item
+              >9. Once set, dust with powdered sugar and cut into squares or
+              rectangles.</ion-item
+            >
+          </ion-list>
+        </div>
+      </ion-accordion>
+
+      <!-- Seventh Accordion -->
+      <ion-accordion value="seventh" style="margin-bottom: 10px">
+        <ion-item slot="header" color="light">
+          <ion-label>Pistachio Baklava Rolls</ion-label>
+        </ion-item>
+        <div class="ion-padding" slot="content">
+          <ion-list>
+            <ion-item
+              ><b>Description: </b> Crispy layers of phyllo pastry filled with
+              sweet pistachio filling and soaked in sugar syrup.</ion-item
+            >
+            <ion-item><b>Calories:</b> 420 kcal</ion-item>
+            <ion-item>1/2 lb phyllo pastry sheets</ion-item>
+            <ion-item>1 cup unsalted pistachios, finely chopped</ion-item>
+            <ion-item>1/2 cup unsalted butter, melted</ion-item>
+            <ion-item>1/2 cup sugar</ion-item>
+            <ion-item>1/4 cup water</ion-item>
+            <ion-item>1 tbsp lemon juice</ion-item>
+            <ion-item>1/4 tsp rosewater</ion-item>
+            <ion-item><b>Instructions:</b></ion-item>
+            <ion-item
+              >1. Preheat oven to 350°F (175°C). Grease a baking dish.</ion-item
+            >
+            <ion-item
+              >2. In a saucepan, combine sugar, water, and lemon juice. Bring to
+              a boil and simmer until the sugar is dissolved. Remove from heat
+              and add rosewater. Set aside to cool.</ion-item
+            >
+            <ion-item
+              >3. Lay out one sheet of phyllo pastry and brush it with melted
+              butter. Place another sheet on top and repeat the process until
+              you have 5-6 layers.</ion-item
+            >
+            <ion-item
+              >4. Sprinkle a layer of chopped pistachios over the buttered
+              pastry.</ion-item
+            >
+            <ion-item
+              >5. Roll the pastry tightly to form a log. Repeat the process with
+              the remaining pastry and pistachios.</ion-item
+            >
+            <ion-item
+              >6. Cut each roll into 2-inch pieces and place them in the greased
+              baking dish.</ion-item
+            >
+            <ion-item
+              >7. Bake for 25-30 minutes or until golden brown and
+              crispy.</ion-item
+            >
+            <ion-item
+              >8. Pour the cooled sugar syrup over the hot baklava rolls and
+              allow them to soak for at least 4 hours or overnight.</ion-item
+            >
+          </ion-list>
+        </div>
+      </ion-accordion>
+
+      <!-- Eighth Accordion -->
+      <ion-accordion value="eighth" style="margin-bottom: 10px">
+        <ion-item slot="header" color="light">
+          <ion-label>Mango Sago</ion-label>
+        </ion-item>
+        <div class="ion-padding" slot="content">
+          <ion-list>
+            <ion-item
+              ><b>Description: </b> A refreshing and creamy dessert made from
+              mango puree, sago pearls, and coconut milk.</ion-item
+            >
+            <ion-item><b>Calories:</b> 380 kcal</ion-item>
+            <ion-item>1 cup small sago pearls</ion-item>
+            <ion-item>2 cups water</ion-item>
+            <ion-item>2 ripe mangoes, peeled and diced</ion-item>
+            <ion-item>1 cup coconut milk</ion-item>
+            <ion-item>1/2 cup sugar</ion-item>
+            <ion-item><b>Instructions:</b></ion-item>
+            <ion-item
+              >1. Rinse the sago pearls under cold water and drain.</ion-item
+            >
+            <ion-item
+              >2. In a saucepan, bring 2 cups of water to a boil. Add the sago
+              pearls and cook until translucent (about 10-15 minutes). Stir
+              occasionally to prevent sticking.</ion-item
+            >
+            <ion-item
+              >3. Drain the cooked sago pearls and rinse under cold water. Set
+              aside.</ion-item
+            >
+            <ion-item
+              >4. In a blender, combine the diced mangoes, coconut milk, and
+              sugar. Blend until smooth and creamy.</ion-item
+            >
+            <ion-item
+              >5. In a serving bowl, layer the cooked sago pearls and mango
+              puree. Repeat the layers until all the ingredients are used
+              up.</ion-item
+            >
+            <ion-item
+              >6. Chill in the refrigerator for at least 1 hour before
+              serving.</ion-item
+            >
+          </ion-list>
+        </div>
+      </ion-accordion>
+
+      <!-- Ninth Accordion -->
+      <ion-accordion value="ninth" style="margin-bottom: 10px">
+        <ion-item slot="header" color="light">
+          <ion-label>Coconut Macaroons</ion-label>
+        </ion-item>
+        <div class="ion-padding" slot="content">
+          <ion-list>
+            <ion-item
+              ><b>Description: </b> Chewy and sweet coconut cookies made from
+              shredded coconut, egg whites, and sugar.</ion-item
+            >
+            <ion-item><b>Calories:</b> 350 kcal</ion-item>
+            <ion-item>3 cups shredded coconut</ion-item>
+            <ion-item>3/4 cup sugar</ion-item>
+            <ion-item>2 egg whites</ion-item>
+            <ion-item>1/2 tsp vanilla extract</ion-item>
+            <ion-item>1/4 tsp salt</ion-item>
+            <ion-item><b>Instructions:</b></ion-item>
+            <ion-item
+              >1. Preheat oven to 325°F (160°C). Line a baking sheet with
+              parchment paper.</ion-item
+            >
+            <ion-item
+              >2. In a mixing bowl, combine shredded coconut, sugar, egg whites,
+              vanilla extract, and salt. Mix until well combined.</ion-item
+            >
+            <ion-item
+              >3. Drop tablespoonfuls of the coconut mixture onto the prepared
+              baking sheet, spacing them apart.</ion-item
+            >
+            <ion-item
+              >4. Bake for 20-25 minutes or until the macaroons are golden brown
+              around the edges.</ion-item
+            >
+            <ion-item
+              >5. Allow the macaroons to cool on the baking sheet for 5 minutes
+              before transferring them to a wire rack to cool
+              completely.</ion-item
+            >
+          </ion-list>
+        </div>
+      </ion-accordion>
+
+      <!-- Tenth Accordion -->
+      <ion-accordion value="tenth" style="margin-bottom: 10px">
+        <ion-item slot="header" color="light">
+          <ion-label>Date and Nut Bars</ion-label>
+        </ion-item>
+        <div class="ion-padding" slot="content">
+          <ion-list>
+            <ion-item
+              ><b>Description: </b> Nutty and sweet bars made from dates, nuts,
+              and honey.</ion-item
+            >
+            <ion-item><b>Calories:</b> 320 kcal</ion-item>
+            <ion-item>1 cup pitted dates</ion-item>
+            <ion-item>1 cup mixed nuts (almonds, walnuts, pecans)</ion-item>
+            <ion-item>1/4 cup honey</ion-item>
+            <ion-item>1/2 tsp vanilla extract</ion-item>
+            <ion-item>1/4 tsp salt</ion-item>
+            <ion-item><b>Instructions:</b></ion-item>
+            <ion-item
+              >1. In a food processor, combine pitted dates, mixed nuts, honey,
+              vanilla extract, and salt. Process until the mixture comes
+              together and forms a sticky dough.</ion-item
+            >
+            <ion-item
+              >2. Press the mixture evenly into a lined baking dish.</ion-item
+            >
+            <ion-item>3. Refrigerate for at least 1 hour to set.</ion-item>
+            <ion-item>4. Once set, cut into bars or squares.</ion-item>
+            <ion-item
+              >5. Store the bars in an airtight container in the
+              refrigerator.</ion-item
+            >
           </ion-list>
         </div>
       </ion-accordion>
