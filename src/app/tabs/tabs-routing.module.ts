@@ -23,9 +23,43 @@ const routes: Routes = [
           import('../tab3/tab3.module').then((m) => m.Tab3PageModule),
       },
       {
-        path: 'tab4', // Added new route for 'Tab 4'
+        path: 'tab4',
         loadChildren: () =>
           import('../tab4/tab4.module').then((m) => m.Tab4PageModule),
+      },
+      {
+        path: 'asian',
+        loadChildren: () =>
+          import('../asian/asian.module').then((m) => m.AsianPageModule),
+      },
+      {
+        path: 'breakfast',
+        loadChildren: () =>
+          import('../breakfast/breakfast.module').then(
+            (m) => m.BreakfastPageModule
+          ),
+      },
+      {
+        path: 'dessert',
+        loadChildren: () =>
+          import('../dessert/dessert.module').then((m) => m.DessertPageModule),
+      },
+      {
+        path: 'dinner',
+        loadChildren: () =>
+          import('../dinner/dinner.module').then((m) => m.DinnerPageModule),
+      },
+      {
+        path: 'italian',
+        loadChildren: () =>
+          import('../italian/italian.module').then((m) => m.ItalianPageModule),
+      },
+      {
+        path: 'under30mins',
+        loadChildren: () =>
+          import('../under30mins/under30mins.module').then(
+            (m) => m.Under30minsPageModule
+          ),
       },
       {
         path: '',
@@ -33,6 +67,40 @@ const routes: Routes = [
         pathMatch: 'full',
       },
     ],
+  },
+  {
+    path: 'asian',
+    loadChildren: () =>
+      import('../asian/asian.module').then((m) => m.AsianPageModule),
+  },
+  {
+    path: 'breakfast',
+    loadChildren: () =>
+      import('../breakfast/breakfast.module').then(
+        (m) => m.BreakfastPageModule
+      ),
+  },
+  {
+    path: 'dessert',
+    loadChildren: () =>
+      import('../dessert/dessert.module').then((m) => m.DessertPageModule),
+  },
+  {
+    path: 'dinner',
+    loadChildren: () =>
+      import('../dinner/dinner.module').then((m) => m.DinnerPageModule),
+  },
+  {
+    path: 'italian',
+    loadChildren: () =>
+      import('../italian/italian.module').then((m) => m.ItalianPageModule),
+  },
+  {
+    path: 'under30mins',
+    loadChildren: () =>
+      import('../under30mins/under30mins.module').then(
+        (m) => m.Under30minsPageModule
+      ),
   },
   {
     path: '',
