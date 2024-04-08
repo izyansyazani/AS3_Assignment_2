@@ -1,5 +1,9 @@
 <ion-header [translucent]="true">
   <ion-toolbar color="light">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+
     <ion-title style="text-align: center"> Asian </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -27,7 +31,11 @@
     <ion-accordion-group style="width: 90%; z-index: 1">
       <!-- First Accordion -->
       <ion-accordion value="first" style="margin-bottom: 10px">
-        <ion-item slot="header" color="light">
+        <ion-item
+          slot="header"
+          color="light"
+          style="--background: var(--ion-color-custom)"
+        >
           <ion-label>Indonesian Soto Ayam</ion-label>
         </ion-item>
         <div class="ion-padding" slot="content">
